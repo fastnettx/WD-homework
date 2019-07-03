@@ -1,2 +1,1 @@
-1
-ghjdthrf  2
+test ok
