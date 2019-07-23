@@ -1,0 +1,51 @@
+body {
+    padding: 0 30px;
+    line-height: 26px;
+    font-family: "Arial";
+    color: darkblue;
+    background-color: #f1c40f;
+
+}
+
+.top {
+    font-size: 22px;
+    border: white double 3px;
+    text-align: center;
+    height: 15%;
+}
+
+
+.layout {
+    display: grid;
+    grid-template-areas:
+            'column1 column2 column3'
+            'foot foot foot';
+    margin: 2vh;
+    grid-template-columns: 2fr 6fr 1fr;
+    grid-template-rows: 12fr 1fr;
+    height: 90vh;
+        color: lavenderblush;
+
+}
+.layout .foot{
+    grid-area: foot;
+    margin: 0.5vh;
+    border: white dashed 2px;
+    vertical-align: center;
+    text-align: center;
+
+}
+
+.layout .column {
+    margin: 0.5vh 0.5vh;
+    border: white dotted 2px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 3vh;
+}
+.layout .column p{
+    text-align: left;
+    font-size: 14px;
+    color: black;
+}
