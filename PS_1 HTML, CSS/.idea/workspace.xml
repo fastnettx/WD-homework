@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e0b3874-3b88-4301-a4ad-4a8066892b89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Landing page/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Landing page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Landing page/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +37,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1346" />
@@ -51,27 +48,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PS_1 HTML, CSS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PS_1 HTML, CSS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PS_1 HTML, CSS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PS_1 HTML, CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="Landing page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PS_1 HTML, CSS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PS_1 HTML, CSS" type="462c0819:PsiDirectoryNode" />
-              <item name="WarmUp" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -114,7 +91,7 @@
       <workItem from="1563880266105" duration="1396000" />
       <workItem from="1563977952162" duration="18898000" />
       <workItem from="1564056163251" duration="18822000" />
-      <workItem from="1564147247768" duration="13683000" />
+      <workItem from="1564147247768" duration="14445000" />
     </task>
     <task id="LOCAL-00001" summary="Test site">
       <created>1563273948756</created>
@@ -127,7 +104,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94705000" />
+    <option name="totallyTimeSpent" value="95467000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -139,7 +116,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2806354" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
