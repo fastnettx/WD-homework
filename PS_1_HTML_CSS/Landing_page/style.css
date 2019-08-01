@@ -4,11 +4,11 @@
 }
 
 body {
-    padding: 0px;
+    padding: 0;
     line-height: 26px;
     font-family: "Arial";
     color: white;
-    background-color: #1dd1a1;
+    background-color: #1abc9c;
 }
 
 * {
@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    margin: 0px;
+    margin: 0;
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -31,13 +31,13 @@ body {
     color: black;
 }
 
-.logo i {
+.logo-bold {
     font-weight: bold;
     font-style: normal;
 }
 
-.logo em {
-    color: #1dd1a1;
+.logo-green {
+    color: #1abc9c;
 }
 
 .menu {
@@ -46,7 +46,7 @@ body {
     text-transform: uppercase;
 }
 
-header a {
+.header__link {
     padding: 25px;
     text-decoration: none;
     color: black;
@@ -55,10 +55,9 @@ header a {
 .container {
     display: grid;
     grid-template-columns: 5fr 5fr 5fr;
-    grid-template-rows: 450px 330px;
+    grid-template-rows: 450fr 400fr;
     grid-template-areas: 'column1 column2 column2' 'column3 column4 column5';
     text-align: center;
-
 }
 
 .image {
@@ -75,51 +74,53 @@ h2 {
 .text {
     padding: 30px;
     grid-area: column2;
+    text-align: justify;
 }
 
 .text h1 {
-    margin: 30px;
+    margin: 50px 100px;
     font-size: 36px;
 }
 
 .text p {
     margin: 50px 100px;
-    text-align: justify;
+}
+
+.input input:hover {
+    color: wheat;
+    background-color: olivedrab;
 }
 
 .input input {
     width: 130px;
     height: 50px;
     color: white;
-    background-color: #1dd1a1;
+    background-color: #1abc9c;
     border-radius: 4px;
     font-size: 20px;
     border: 3px solid white;
 }
 
 .input {
-    padding: 0px 0px 00px 100px;;
+    padding: 0 0 0 100px;;
     text-align: left;
 }
 
-.content_column1, .content_column2, .content_column3 {
-    padding: 10px 30px;
+.content_column {
+    padding: 40px;
     color: black;
     background-color: white;
 }
 
 .content_column1 {
-
     grid-area: column3;
 }
 
 .content_column2 {
-
     grid-area: column4;
 }
 
 .content_column3 {
-
     grid-area: column5;
 }
 
@@ -130,17 +131,15 @@ footer {
 .round_icon {
     width: 80px;
     height: 80px;
-    background-color: #1dd1a1;
+    background-color: #1abc9c;
     border-radius: 50%;
     margin: 10px auto;
-
 }
 
 .round_icon i {
     font-size: 35px;
     color: white;
     margin-top: 20px;
-
 }
 
 .contact {
@@ -156,12 +155,13 @@ form {
     flex-direction: column;
 }
 
-#name, #email, #phone, #textarea, #number, #url {
+.name, .email, .phone, .textarea, .number, .url {
     padding: 15px;
     margin: 5px;
     font-size: 18px;
 }
-#mycolor{
+
+#mycolor {
     padding: 0px;
 }
 
@@ -175,16 +175,16 @@ form {
 }
 
 .additional_form label {
-    margin: 5px 0px;
+    margin: 5px 0;
     font-size: 20px;
-    padding: 15px 0px;
+    padding: 15px 0;
     flex-basis: 35%;
 }
 
 .additional_form input, .additional_form select {
-    margin: 5px 0px;
+    margin: 5px 0;
     font-size: 18px;
-    padding: 15px 0px;
+    padding: 15px 0;
     flex-basis: 65%;
 }
 
