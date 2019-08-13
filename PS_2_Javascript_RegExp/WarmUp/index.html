@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WarmUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <form>
+        <h3><p>Форма для расчета суммы чисел в промежутке между введеными данными,</p>
+            <p>суммируются только числа которые заканчиваются на 2,3, и 7</p></h3>
+        <div>
+            <label for="first_number"> Введите первое число </label>
+            <input type="number" id="first_number" value="-10000" name="first_number">
+        </div>
+        <div>
+            <label for="second _number"> Введите второе число </label>
+            <input type="number" id="second _number" value="10000" name="second _number">
+        </div>
+        <input type="button" class="button" value="Расчет" id="sum_of_numbers_button" onclick="summFunction()">
+        <div class="result">Сумма чисел равна: <em id="result_summ"> </em>
+        </div>
+    </form>
+</section>
+<section>
+    <form>
+        <h3>Форма для преобразования времени</h3>
+        <div>
+            <label for="time_in_seconds"> Введите количество секунд </label>
+            <input type="number" id="time_in_seconds" value="100" name="second _number">
+            <input type="button" class="button" value="Расчет" id="time_in_format" onclick="recountTime()">
+        </div>
+        <div class="result">Время в формате hh:mm:ss - <em id="result_time_in_format"> </em>
+        </div>
+        <div>
+            <label for="full_time"> Введите время в формате hh:mm:ss</label>
+            <input type="text" id="full_time" value="02:50:10" name="full_time">
+            <input type="button" class="button" value="Расчет" id="full_time_in_format"
+                   onclick="convertTimeToSeconds()">
+        </div>
+        <div class="result">Количество секунд равно: <em id="result_full_time_in_format"> </em>
+        </div>
+    </form>
+</section>
+<section>
+    <form>
+        <h3>Форма для вычисления количества времени</h3>
+        <div>
+            <label for="first_data"> Введите первую дату </label>
+            <input type="datetime-local" id="first_data" value="2018-11-26T23:01" name="first_data">
+        </div>
+        <div>
+            <label for="second _data"> Введите вторую дату </label>
+            <input type="datetime-local" id="second _data" value="2019-10-30T11:55" name="second _data">
+        </div>
+        <input type="button" class="button" value="Расчет" onclick="dateInterval()">
+        <div class="result">Ваш период равен: <em id="result_full _data"> </em>
+        </div>
+    </form>
+</section>
+<section>
+    <form class="form_board">
+        <h3>Форма для рисования шахматной доски</h3>
+        <div>
+            <label for="chess_board">Введите размер доски </label>
+            <input type="text" id="chess_board" value="8x8">
+            <input type="button" class="button" value="Нарисовать" id="button_chess_board"
+                   onclick="clearBoard(); drawAchessboard();">
+            <input type="button" class="button" value="Очистить" id="clear_board" onclick="clearBoard()">
+        </div>
+        <div class="chess_board" id="draw_a_chessboard">
+        </div>
+    </form>
+</section>
+<section>
+    <form>
+        <h3>Форма для проверки ссылки/ip</h3>
+        <div class="form_link">
+            <label> Введите ссылки/ip через запятую</label>
+            <div class="form_link_text">
+                <textarea name="textarea" id="link_check"></textarea>
+                <input type="reset" class="button" value="Очистить" onclick="clearURL()">
+            </div>
+        </div>
+        <div class="result" id="result_link_text"></div>
+    </form>
+</section>
+<section>
+    <form>
+        <h3>Форма для проверки регулярных выражений</h3>
+        <div class="form_link_text">
+            <label for="plain_text"> Введите текст </label>
+            <textarea id="plain_text"></textarea>
+        </div>
+        <div>
+            <label for="regular_expression"> Введите регулярное выражение </label>
+            <input type="text" id="regular_expression" value="[aAbBcC]+">
+        </div>
+        <input type="button" class="button" value="Показать" onclick="convertToRegularExpression()">
+        <div class="result"><em id="regular_expression_in_text"> </em>
+        </div>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
