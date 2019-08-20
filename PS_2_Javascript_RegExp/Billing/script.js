@@ -103,6 +103,7 @@ function tableFilter() {
 }
 
 var switch_name_categoory = true;
+document.getElementById('th_category').style.cursor = 'pointer';
 document.getElementById('th_category').onclick = function () {
     if (switch_name_categoory) {
         document.getElementById('th_category').innerHTML = "Category ▲";
@@ -117,6 +118,7 @@ document.getElementById('th_category').onclick = function () {
     }
 };
 var switch_name = true;
+document.getElementById('th_name').style.cursor = 'pointer';
 document.getElementById('th_name').onclick = function () {
     if (switch_name) {
         document.getElementById('th_name').innerHTML = "Name ▲";
