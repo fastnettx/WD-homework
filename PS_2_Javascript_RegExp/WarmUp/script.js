@@ -4,12 +4,14 @@
 function summFunction() {
     var number_one = +document.getElementById('first_number').value;
     var number_two = +document.getElementById('second _number').value;
+    console.log((number_one)%7);
+    console.log(number_two);
     if (number_one > number_two) {
         document.getElementById('result_summ').innerText = " Введен не коректный диапазон."
     } else {
         var sum = 0;
         for (var i = number_one; i <= number_two; i++) {
-            if (i % 10 == 2 || i % 10 == 3 || i % 10 == 7) {
+            if (Math.abs(i) % 10 === 2 || Math.abs(i) % 10 === 3 || Math.abs(i) % 10 === 7) {
                 sum += i;
             }
         }
@@ -125,7 +127,7 @@ function drawAchessboard() {
             for (var i = 0; i < height; i++) {
                 for (var j = 0; j < width; j++) {
                     var cell = document.createElement("div");
-                    if (i % 2 == j % 2) {
+                    if (i % 2 === j % 2) {
                         cell.style.background = 'black';
                         cell.style.height = '30px';
                         cell.style.width = '30px';
@@ -166,7 +168,7 @@ function clearURL() {
 link_check.addEventListener("focusout", function (dataChecking) {
     document.getElementById('result_link_text').innerText = '';
     var textarea = document.getElementById('link_check').value;
-    if (textarea == "") {
+    if (textarea === "") {
         document.getElementById('result_link_text').innerText = "Ничего не введено";
     } else {
         var array_list_unformatted = textarea.split(",");
