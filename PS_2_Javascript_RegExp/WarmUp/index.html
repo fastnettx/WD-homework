@@ -12,11 +12,11 @@
             <p>суммируются только числа которые заканчиваются на 2,3, и 7</p></h3>
         <div>
             <label for="first_number"> Введите первое число </label>
-            <input type="number" id="first_number" value="-10000" name="first_number">
+            <input type="number" id="first_number" placeholder="-10000">
         </div>
         <div>
             <label for="second _number"> Введите второе число </label>
-            <input type="number" id="second _number" value="10000" name="second _number">
+            <input type="number" id="second _number" placeholder="10000">
         </div>
         <input type="button" class="button" value="Расчет" id="sum_of_numbers_button" onclick="summFunction()">
         <div class="result">Сумма чисел равна: <em id="result_summ"> </em>
@@ -28,14 +28,14 @@
         <h3>Форма для преобразования времени</h3>
         <div>
             <label for="time_in_seconds"> Введите количество секунд </label>
-            <input type="number" id="time_in_seconds" value="100" name="second _number">
+            <input type="number" id="time_in_seconds" placeholder="100">
             <input type="button" class="button" value="Расчет" id="time_in_format" onclick="recountTime()">
         </div>
         <div class="result">Время в формате hh:mm:ss - <em id="result_time_in_format"> </em>
         </div>
         <div>
             <label for="full_time"> Введите время в формате hh:mm:ss</label>
-            <input type="text" id="full_time" value="02:50:10" name="full_time">
+            <input type="text" id="full_time" placeholder="02:50:10">
             <input type="button" class="button" value="Расчет" id="full_time_in_format"
                    onclick="convertTimeToSeconds()">
         </div>
@@ -48,11 +48,11 @@
         <h3>Форма для вычисления количества времени</h3>
         <div>
             <label for="first_data"> Введите первую дату </label>
-            <input type="datetime-local" id="first_data" value="2018-11-26T23:01" name="first_data">
+            <input type="datetime-local" id="first_data">
         </div>
         <div>
             <label for="second _data"> Введите вторую дату </label>
-            <input type="datetime-local" id="second _data" value="2019-10-30T11:55" name="second _data">
+            <input type="datetime-local" id="second _data">
         </div>
         <input type="button" class="button" value="Расчет" onclick="dateInterval()">
         <div class="result">Ваш период равен: <em id="result_full _data"> </em>
@@ -64,7 +64,7 @@
         <h3>Форма для рисования шахматной доски</h3>
         <div>
             <label for="chess_board">Введите размер доски </label>
-            <input type="text" id="chess_board" value="8x8">
+            <input type="text" id="chess_board" placeholder="8x8">
             <input type="button" class="button" value="Нарисовать" id="button_chess_board"
                    onclick="clearBoard(); drawAchessboard();">
             <input type="button" class="button" value="Очистить" id="clear_board" onclick="clearBoard()">
@@ -95,7 +95,7 @@
         </div>
         <div>
             <label for="regular_expression"> Введите регулярное выражение </label>
-            <input type="text" id="regular_expression" value="[aAbBcC]+">
+            <input type="text" id="regular_expression" placeholder="[aAbBcC]+">
         </div>
         <input type="button" class="button" value="Показать" onclick="convertToRegularExpression()">
         <div class="result"><em id="regular_expression_in_text"> </em>

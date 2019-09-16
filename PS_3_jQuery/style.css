@@ -1,0 +1,29 @@
+.body_div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.dropdown {
+    display: flex;
+    background: #6cf197;
+    margin: auto;
+    height: 60px;
+    width: 200px;
+    border: 2px double #aff1b6;
+    border-radius: 25px;
+    color: #0d51c0;
+    font-size: 20px;
+    align-items: center;
+}
+#dr2{
+    display: none;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+
+
