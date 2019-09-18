@@ -20,7 +20,7 @@ const GOODS = [
     {
         category: 'furniture',
         name: 'Sofa',
-        amount: 1,
+        amount: 2,
         price: 50
     },
     {
