@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+    line-height: 26px;
+    font-family: "Arial";
+    color: white;
+    background-color: #1abc9c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    margin: 0;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.logo {
+    flex-basis: 50%;
+    padding: 20px 30px;
+    font-size: 60px;
+}
+
+.logo-bold {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.logo-green {
+    color: #1abc9c;
+}
+
+.menu {
+    padding: 25px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header__link {
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;
+    grid-template-rows: 450fr 400fr;
+    grid-template-areas: 'column1 column2 column2' 'column3 column4 column5';
+    text-align: center;
+}
+
+.image {
+    text-align: right;
+    padding: 30px 20px 30px 40px;
+    grid-area: column1;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.text {
+    padding: 30px;
+    grid-area: column2;
+    text-align: justify;
+}
+
+.text h1 {
+    margin: 50px 100px;
+    font-size: 36px;
+}
+
+.text p {
+    margin: 50px 100px;
+}
+
+.input input:hover {
+    color: wheat;
+    background-color: olivedrab;
+}
+
+.input input {
+    width: 130px;
+    height: 50px;
+    color: white;
+    background-color: #1abc9c;
+    border-radius: 4px;
+    font-size: 20px;
+    border: 3px solid white;
+}
+
+.input {
+    padding: 0 0 0 100px;;
+    text-align: left;
+}
+
+.content_column {
+    padding: 40px;
+    color: black;
+    background-color: white;
+}
+
+.content_column1 {
+    grid-area: column3;
+}
+
+.content_column2 {
+    grid-area: column4;
+}
+
+.content_column3 {
+    grid-area: column5;
+}
+
+footer {
+    display: flex;
+}
+
+.round_icon {
+    width: 80px;
+    height: 80px;
+    background-color: #1abc9c;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.round_icon i {
+    font-size: 35px;
+    color: white;
+    margin-top: 20px;
+}
+.button i {
+    margin: 20px 20px;
+    font-size: 80px;
+    opacity: 0.9;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name, .email, .phone, .textarea, .number, .url {
+    padding: 15px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+#mycolor {
+    padding: 0px;
+}
+
+.input_button {
+    padding: 15px;
+    text-align: center;
+}
+
+.additional_form {
+    display: flex;
+}
+
+.additional_form label {
+    margin: 5px 0;
+    font-size: 20px;
+    padding: 15px 0;
+    flex-basis: 35%;
+}
+
+.additional_form input, .additional_form select {
+    margin: 5px 0;
+    font-size: 18px;
+    padding: 15px 0;
+    flex-basis: 65%;
+}
+
+.gender {
+    display: flex;
+    font-size: 18px;
+}
+
