@@ -1,65 +1,75 @@
-const ARRAY_SELECT = [{
-    name: 'accountVK',
-    images: './images/vk.png'
-},
+const ARRAY_SELECT = [
     {
-        name: 'accountFace',
+        name: 'VK',
+        images: './images/vk.png'
+    },
+    {
+        name: 'Facebook',
         images: './images/face.png'
     },
     {
-        name: 'accountTW',
+        name: 'Twitter',
         images: './images/tw.png'
     },
     {
-        name: 'accountGoog',
+        name: 'Google',
         images: './images/goog.png'
     },
     {
-        name: 'accountYou',
+        name: 'YouTube',
         images: './images/you.png'
     },
     {
-        name: 'accountSkype',
+        name: 'Skype',
         images: './images/skype.png'
     },
     {
-        name: 'accountTelag',
+        name: 'Telegram',
         images: './images/teleg.png'
     },
     {
-        name: 'accountViber',
+        name: 'Viber',
         images: './images/viber.png'
     }
 ];
-
+let toggle = true;
 $(document).ready(function () {
-    for (var i = 0; i < ARRAY_SELECT.length; i++) {
-        var newElems = $('<div class=\'dropdown\'></div>')
+    for (let i = 0; i < ARRAY_SELECT.length; i++) {
+        let newElems = $('<div class=\'dropdown dr2\'></div>')
             .append('<img src=' + ARRAY_SELECT[i].images + '>')
-            .append('<div> ' + ARRAY_SELECT[i].name + '</div>');
+            .append('<div> ' + ARRAY_SELECT[i].name + '</div>')
+            .attr('id', 'dropdown_' + (i));
         $('.body_div').append(newElems);
-        //$('.body_div').show(50000);
-        // $('.dropdown').show(50000);
     }
 
     $(document).on('click', '.dropdown', function () {
-        $('#dr1').hide(10000);
-
-
+        if (toggle) {
+            $('#dropdown').addClass('dr2');
+            for (let i = 0; i < ARRAY_SELECT.length; i++) {
+                $('#dropdown_' + i).removeClass('dr2');
+            }
+            toggle = !toggle;
+        } else {
+            const selectedId = $(this).attr('id');
+            for (let i = 0; i < ARRAY_SELECT.length; i++) {
+                if ('dropdown_' + i !== selectedId) {
+                    $('#dropdown_' + i).addClass('dr2');
+                }
+            }
+            toggle = !toggle;
+        }
     });
 
     $(document).on('mouseover ', '.dropdown', function () {
         $(this).css('color', 'white');
         $(this).css('cursor', 'pointer');
-        $(this).css('opacity', '0.5');
-
+        $(this).css('opacity', '0.7');
     });
     $(document).on(' mouseout', '.dropdown', function () {
         $(this).css('color', '#0d51c0');
         $(this).css('opacity', '1');
         $(this).css('background-color', '#6cf197');
     });
-
 });
 
 
