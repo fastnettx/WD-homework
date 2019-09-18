@@ -32,7 +32,7 @@ const GOODS = [
     {
         category: 'other',
         name: 'Calendar 2019',
-        amount: 1,
+        amount: 2,
         price: 3
     },
     {
