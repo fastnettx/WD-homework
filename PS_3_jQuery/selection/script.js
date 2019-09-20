@@ -59,6 +59,14 @@ $(document).ready(function () {
             toggle = !toggle;
         }
     });
+    $(document).on('click', function (event) {
+        if ($(event.target).hasClass('dropdown')) {
+            console.log("dropdown");
+        }
+        else {
+            console.log("no");
+        }
+    });
 
     $(document).on('mouseover ', '.dropdown', function () {
         $(this).css('color', 'white');

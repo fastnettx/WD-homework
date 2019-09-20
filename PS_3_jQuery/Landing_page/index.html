@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="button">
+<div class="button" id="button">
     <i class="fas fa-arrow-circle-up"></i>
 </div>
 <header>
@@ -19,9 +19,9 @@
             <a href="" class="logo-bold"><i class="logo-bold">N</i><em class="logo-green">++</em></a>
         </div>
         <div class="menu">
-            <a class="header__link" href="#products">Products</a>
-            <a class="header__link" href="#content">About us</a>
-            <a class="header__link" href="#contact">Contact uS</a>
+            <a class="header__link" id="header_products" href="#products">Products</a>
+            <a class="header__link" id="header_content" href="#content">About us</a>
+            <a class="header__link" id="header_contact" href="#contact">Contact uS</a>
         </div>
     </div>
 </header>
@@ -29,14 +29,13 @@
     <div class="image">
         <img src="Image/iphone-6.png" width="200" alt="Iphone">
     </div>
-    <div class="text">
+    <div class="text" id="products">
         <div>
             <h1> Our awesome app is ready to use!</h1>
         </div>
-        <div id="products">
+        <div >
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur vero
-                laboriosam adipisci dolores aut blanditiis necessitatibus inventore, eius
                 fuga porro recusandae sint quis aliquam nam jure nihil beatae, atque quod!
             </p>
         </div>

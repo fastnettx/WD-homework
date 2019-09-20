@@ -141,10 +141,22 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
 .button i {
-    margin: 20px 20px;
+    position: fixed;
+    visibility: hidden;
     font-size: 80px;
-    opacity: 0.9;
+    bottom: 5%;
+    right: 10px;
+    color: #6ef1eb;
+    opacity: 0.6;
+}
+.button-active i{
+    visibility: visible;
+}
+.button-sel i{
+    cursor: pointer;
+    opacity: 1;
 }
 
 .contact {
