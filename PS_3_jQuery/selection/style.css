@@ -3,6 +3,11 @@
     flex-direction: column;
     padding: 20px;
 }
+.select_dropdown{
+    width: 205px;
+    justify-content:center;
+    margin: auto;
+}
 
 .dropdown {
     display: flex;

@@ -1,5 +1,9 @@
 const ARRAY_SELECT = [
     {
+        name: 'Select',
+        images: './images/sel.png'
+    },
+    {
         name: 'VK',
         images: './images/vk.png'
     },
@@ -33,32 +37,50 @@ const ARRAY_SELECT = [
     }
 ];
 let toggle = true;
+let selected_item = 0;
+
 $(document).ready(function () {
     for (let i = 0; i < ARRAY_SELECT.length; i++) {
         let newElems = $('<div class=\'dropdown dr2\'></div>')
             .append('<img src=' + ARRAY_SELECT[i].images + '>')
             .append('<div> ' + ARRAY_SELECT[i].name + '</div>')
-            .attr('id', 'dropdown_' + (i));
-        $('.body_div').append(newElems);
+            .attr('id', i);
+        $('.select_dropdown').append(newElems);
     }
 
     $(document).on('click', '.dropdown', function () {
         if (toggle) {
             $('#dropdown').addClass('dr2');
             for (let i = 0; i < ARRAY_SELECT.length; i++) {
-                $('#dropdown_' + i).removeClass('dr2');
+                $('#' + i).removeClass('dr2');
             }
             toggle = !toggle;
         } else {
             const selectedId = $(this).attr('id');
+
             for (let i = 0; i < ARRAY_SELECT.length; i++) {
-                if ('dropdown_' + i !== selectedId) {
-                    $('#dropdown_' + i).addClass('dr2');
+                if (i != selectedId) {
+                    selected_item = selectedId;
+                    $('#' + i).addClass('dr2');
                 }
             }
             toggle = !toggle;
         }
     });
+
+    $(document).on('click', function (event) {
+        if (!$(event.target).parents().hasClass("select_dropdown")) {
+            if (!toggle) {
+                for (let i = 0; i < ARRAY_SELECT.length; i++) {
+                    if (i != selected_item) {
+                        $('#' + i).addClass('dr2');
+                    }
+                }
+                toggle = !toggle;
+            }
+        }
+    });
+
 
     $(document).on('mouseover ', '.dropdown', function () {
         $(this).css('color', 'white');
