@@ -202,7 +202,9 @@ function convertToRegularExpression() {
     let regexp = new RegExp(reg, "g");
     document.getElementById('regular_expression_in_text').innerHTML =
         textarea.replace(regexp, '<mark>$&</mark>');
-}
+};
+
+
 
 
 

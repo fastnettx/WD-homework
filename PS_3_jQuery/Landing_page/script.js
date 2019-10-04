@@ -30,3 +30,17 @@ $(document).ready(function () {
 
 
 });
+
+function division(dividend, divider) {
+    let balance = 0;
+    if (divider === 0) {
+        return console.log('error');
+    }
+    if (dividend >= divider) {
+        balance = dividend - divider;
+        return 1 + division(balance, divider);
+        division(balance, divider);
+    }
+    return 0;
+};
+
