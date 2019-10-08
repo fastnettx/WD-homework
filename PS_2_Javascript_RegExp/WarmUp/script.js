@@ -4,8 +4,6 @@
 function summFunction() {
     const number_one = +document.getElementById('first_number').value;
     const number_two = +document.getElementById('second _number').value;
-    console.log((number_one) % 7);
-    console.log(number_two);
     if (number_one > number_two) {
         document.getElementById('result_summ').innerText = " Введен не коректный диапазон."
     } else {
@@ -70,7 +68,7 @@ function dateInterval() {
     if (data_one <= data_two) {
         let year = Data_2.getFullYear() - Data_1.getFullYear();
         let month = Data_2.getMonth() - Data_1.getMonth();
-        let day = Data_2.getUTCDate() - Data_1.getUTCDate();
+        let day = Data_2.getDate() - Data_1.getDate();
         let hour = Data_2.getHours() - Data_1.getHours();
         let minutes = Data_2.getMinutes() - Data_1.getMinutes();
         if (minutes < 0) {
@@ -119,14 +117,10 @@ function drawAchessboard() {
                 for (let j = 0; j < width; j++) {
                     let cell = document.createElement("div");
                     if (i % 2 === j % 2) {
-                        cell.style.background = 'black';
-                        cell.style.height = '30px';
-                        cell.style.width = '30px';
+                        cell.classList.add('cell_black');
                         elem.appendChild(cell);
                     } else {
-                        cell.style.background = 'white';
-                        cell.style.height = '30px';
-                        cell.style.width = '30px';
+                        cell.classList.add('cell_white');
                         elem.appendChild(cell);
                     }
                 }
@@ -164,7 +158,7 @@ link_check.addEventListener("focusout", function (dataChecking) {
     } else {
         let array_list_unformatted = textarea.split(",");
         let regexURL = /(^(((http|https):\/\/)|(www\.)))[\w]+([\/\-\.]{1}[a-z0-9]+)/i;
-        let regexIP = /^(1?\d?\d|25[0-5]|2[0-4]\d)\.(1?\d?\d|25[0-5]|2[0-4]\d)\.(1?\d?\d|25[0-5]|2[0-4]\d)/;
+        let regexIP = /^(1?\d?\d|25[0-5]|2[0-4]\d)\.(1?\d?\d|25[0-5]|2[0-4]\d)\.(1?\d?\d|25[0-5]|2[0-4]\d)\.(1?\d?\d|25[0-5]|2[0-4]\d)$/;
         let array_list = [];
         for (let i = 0; i < array_list_unformatted.length; i++) {
             array_list_unformatted[i] = array_list_unformatted[i].replace(/(^\s+|\s+$)/g, '');
@@ -185,7 +179,12 @@ link_check.addEventListener("focusout", function (dataChecking) {
             if (/^\d/.test(array_list[i])) {
                 text_url.href = array_list[i];
             } else {
-                text_url.href = 'https\:\/\/' + array_list[i];
+                array_list_unformatted.forEach(function (element) {
+                    if (element.match(array_list[i])) {
+                        text_url.href = element;
+                    }
+                })
+                //text_url.href = 'https\:\/\/' + array_list[i];
             }
             arrayArea.appendChild(text_url);
         }

@@ -69,6 +69,18 @@ textarea {
     font-size: 16px;
 }
 
+.cell_black {
+    background: black;
+    height: 30px;
+    width: 30px;
+}
+
+.cell_white {
+    background: white;
+    height: 30px;
+    width: 30px;
+}
+
 .form_link_text {
     display: flex;
     padding: 10px;
