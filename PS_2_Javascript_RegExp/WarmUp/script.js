@@ -184,7 +184,6 @@ link_check.addEventListener("focusout", function (dataChecking) {
                         text_url.href = element;
                     }
                 })
-                //text_url.href = 'https\:\/\/' + array_list[i];
             }
             arrayArea.appendChild(text_url);
         }
@@ -196,7 +195,7 @@ link_check.addEventListener("focusout", function (dataChecking) {
  *Function that selects a regular expression
  */
 function convertToRegularExpression() {
-    const textarea = document.getElementById('plain_text').value;
+    const textarea = document.getElementById('plain_text').value.replace(/(\<)/g, '&lt;').replace(/(\>)/g, '&gt;');
     const reg = document.getElementById('regular_expression').value;
     let regexp = new RegExp(reg, "g");
     document.getElementById('regular_expression_in_text').innerHTML =
