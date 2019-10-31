@@ -39,13 +39,13 @@ $(document).ready(function () {
         let elementId = element.attr('id');
         if (e.keyCode === leftArrow) {
             if (elementId == 0) {
-                elementId = 6;
+                elementId = IMAGES.length;
             }
             element.removeClass('current');
             goToIdSlide(elementId - 1);
         }
         if (e.keyCode === rightArrow) {
-            if (elementId == 5) {
+            if (elementId == IMAGES.length-1) {
                 elementId = -1;
             }
             element.removeClass('current');
