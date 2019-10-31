@@ -15,7 +15,6 @@ const rightArrow = 39;
 
 $(document).ready(function () {
     const sliderPreviews = $('.slider-previews');
-
     for (let i = 0; i < IMAGES.length; i++) {
         const tableElement = $('<li>');
         const elementImage = $('<img>', {src: API_URL + SMALL_SIZE + IMAGES[i], id: i});
@@ -30,29 +29,27 @@ $(document).ready(function () {
         const selectedImage = $(this).attr("src");
         const imageNumber = "https://picsum.photos/600/400/?image=" +
             selectedImage.substr(selectedImage.indexOf("=") + 1);
-
-        console.log(imageNumber);
-
         $(".slider .slider-previews li img").removeClass("current");
         $('.slider-current img').attr('src', imageNumber);
         $(this).addClass("current");
-
     });
-
 
     $(document).keydown(function (e) {
         const element = $('.current');
         let elementId = element.attr('id');
-
-        console.log(elementId);
         if (e.keyCode === leftArrow) {
-            if () 
-            console.log("left");
-
-            goToIdSlide(3);
+            if (elementId == 0) {
+                elementId = 6;
+            }
+            element.removeClass('current');
+            goToIdSlide(elementId - 1);
         }
         if (e.keyCode === rightArrow) {
-            console.log("right")
+            if (elementId == 5) {
+                elementId = -1;
+            }
+            element.removeClass('current');
+            goToIdSlide(+elementId + 1);
         }
     });
 
@@ -60,10 +57,7 @@ $(document).ready(function () {
         const slideNumber = $("#" + id_number);
         slideNumber.addClass('current');
         $('.slider-current img').attr('src', API_URL + BIG_SIZE + IMAGES[id_number]);
-
     }
-
-
 });
 
 
