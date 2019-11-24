@@ -18,6 +18,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['drawChessboard'])) {
 if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['sumOfDigits'])) {
     calculateTheSumOfTheDigits();
 }
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['generateArray'])) {
+    generateArrayOfNumbers();
+}
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['sumOfCharacters'])) {
+    countTheNumberOfCharacters();
+}
 
 function calculateTheAmount()
 {
@@ -116,6 +122,33 @@ function calculateTheSumOfTheDigits()
     if (preg_match(" /^\d+$/", $number)) {
         $_SESSION['sumOfDigits'] = array_sum(str_split($number));
     } else $_SESSION['sumOfDigits'] = "Не верно указано значение";
+}
+
+function generateArrayOfNumbers()
+{
+    $arrayOfNumbers = array();
+    for ($i = 0; $i < 100; $i++) {
+        $arrayOfNumbers[$i] = rand(0, 10);
+    }
+    $arrayOfNumbers = array_unique($arrayOfNumbers);
+    sort($arrayOfNumbers);
+    $arrayOfNumbers = array_reverse($arrayOfNumbers);
+    for ($i = 0; $i < count($arrayOfNumbers); $i++) {
+        $arrayOfNumbers[$i] *= 2;
+    }
+    $_SESSION['arrayOfNumbers'] = $arrayOfNumbers;
+}
+
+function countTheNumberOfCharacters()
+{
+    $characters = $_POST['characters'];
+    $line = substr_count($characters, "\n");
+    $space = substr_count($characters, " ");
+    $letter = iconv_strlen($characters) - $line - $space;
+
+
+    $_SESSION['numberOfcharacters'] = "Строк : " . $line . ", Пробелов : "
+        . $space . ", Букв : ".$letter;
 }
 
 header("Location: index.php");

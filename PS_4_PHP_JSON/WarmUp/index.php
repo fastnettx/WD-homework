@@ -31,8 +31,11 @@ session_start();
 <section>
     <form action="script_file.php" method="post" enctype="multipart/form-data">
         <h3>Работа с файлами </h3>
-        <label for="file">Выберите файл :</label>
-        <input class="file" type="file" name="uploadFile"><br>
+        <label for="file"></label>
+        <div>
+            <input class="file" type="file" name="uploadFile"><br>
+        </div>
+
         <input type="submit" name="sendFile" value="Загрузить">
         <div class="result">
             <div class="show-links">
@@ -65,7 +68,40 @@ session_start();
         </div>
     </form>
 </section>
+<section>
+    <form action="script_file.php" method="post">
+        <h3>Генерация массива рандомных целых чисел от 1 до 10</h3>
+        <input type="submit" name="generateArray" value="Показать">
+        <div class="result">Массив после обработки:
+            <?php
+            if (isset($_SESSION['arrayOfNumbers'])) {
+                print_r($_SESSION['arrayOfNumbers']);
+            } else '';
+            ?>
+        </div>
+    </form>
+</section>
+<section>
+    <form action="script_file.php" method="post">
+        <h3>Счетчик посещений </h3>
+        <div class="result">Количество посещений :
+            <?= isset($_SESSION['сounter']) ? $_SESSION['сounter']++ : $_SESSION['сounter'] = 1; ?>
 
+        </div>
+    </form>
+</section>
+<section>
+    <form action="script_file.php" method="post">
+        <h3>Введите текст</h3>
+        <div>
+            <textarea name="characters"></textarea>
+        </div>
+        <input type="submit" name="sumOfCharacters" value="Показать">
+        <div class="result">Количество символов:
+            <?= isset($_SESSION['numberOfcharacters']) ? $_SESSION['numberOfcharacters'] : '' ?>
+        </div>
+    </form>
+</section>
 
 </body>
 </html>

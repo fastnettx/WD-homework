@@ -16,7 +16,7 @@ section {
     margin: 20px;
     padding: 20px;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     border: 2px dotted white;
     border-radius: 10px;
     font-size: 20px;
@@ -48,26 +48,25 @@ textarea {
 
 .file {
     width: auto;
-
+    font-size: 16px;
 }
 
 .result {
-    margin: auto;
     font-size: 18px;
 }
 
 .show-links {
     width: 25%;
     text-align: left;
-    margin: auto;
     border: 2px dotted white;
     border-radius: 10px;
     padding: 5px;
 }
-.show-board{
+
+.show-board {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 10px;
 }
 
 .block-black {
@@ -82,6 +81,10 @@ textarea {
     height: 20px;
     margin: 0;
     background-color: white;
+}
+
+textarea {
+margin: 10px;
 }
 
 
