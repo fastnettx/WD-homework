@@ -72,7 +72,7 @@ session_start();
     <form action="script_file.php" method="post">
         <h3>Генерация массива рандомных целых чисел от 1 до 10</h3>
         <input type="submit" name="generateArray" value="Показать">
-        <div class="result">Массив после обработки:
+        <div class="result">Массив :
             <?php
             if (isset($_SESSION['arrayOfNumbers'])) {
                 print_r($_SESSION['arrayOfNumbers']);

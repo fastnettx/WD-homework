@@ -1,0 +1,787 @@
+19-11-2019 10:07:01:883 TH-    1280|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:07:01:883 TH-    1280|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:07:01:883 TH-    1280|findDevices().
+19-11-2019 10:07:01:883 TH-    1280|InitializeCOM().
+19-11-2019 10:07:01:885 TH-    1280|InitializeCOM. Return: 0.
+19-11-2019 10:07:01:885 TH-    1280|ConnectToWMI().
+19-11-2019 10:07:41:902 TH-    1280|ConnectToWMI. Return: 0.
+19-11-2019 10:07:41:902 TH-    1280|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:07:41:902 TH-    1280|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:07:44:234 TH-    1280|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:07:44:234 TH-    1280|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:07:44:234 TH-    1280|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:07:44:234 TH-    1280|findDevices. Size: 1000202273280.
+19-11-2019 10:07:44:253 TH-    1280|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:07:44:253 TH-    1280|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\7&36AAAD92&0.
+19-11-2019 10:07:44:253 TH-    1280|findDevices. Model: Generic Flash Disk USB Device.
+19-11-2019 10:07:44:253 TH-    1280|findDevices. Size: 16919400960.
+19-11-2019 10:07:44:255 TH-    1280|findDevices. Return: true.
+19-11-2019 10:07:44:255 TH-    1280|loggDevices. Device[ 0]: Generic Flash Disk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 16919400960
+19-11-2019 10:07:44:255 TH-    1280|findRegistryDevices().
+19-11-2019 10:07:44:256 TH-    1280|findRegistryDevices. Name: 0. Value: USB\VID_058F&PID_6387\6&843dbf5&0&2
+19-11-2019 10:07:44:256 TH-    1280|setDeviceRegData().
+19-11-2019 10:07:44:256 TH-    1280|setDeviceRegData. Device found in registry USB\VID_058F&PID_6387\6&843dbf5&0&2. Serial: 7.
+19-11-2019 10:07:44:256 TH-    1280|setDeviceRegData. Return.
+19-11-2019 10:07:44:256 TH-    1280|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:07:44:256 TH-    1280|findRegistryDevices. Error: 0 in index entry: 2.
+19-11-2019 10:07:44:256 TH-    1280|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:07:44:256 TH-    1280|findRegistryDevices. Return: true.
+19-11-2019 10:07:44:256 TH-    1280|loggDevices. Device[ 0]: Generic Flash Disk USB Device. Serial: 7. Vendor: 058F. Product: 6387. Matched: true. Name: . Size: 16919400960
+19-11-2019 10:09:13:459 TH-    1280|_tmain(). User option: 0.
+19-11-2019 10:09:54:030 TH-    1280|_tmain(). User device name: GenericFlashDisk
+19-11-2019 10:10:06:688 TH-    1280|_tmain(). Operator: 1.
+19-11-2019 10:10:06:688 TH-    1280|writeUSBFileInfo( Index: 0, file: .\OperatorUSBs.dat)
+19-11-2019 10:10:06:688 TH-    1280|writeUSBFileInfo. uuid: 674ddc1e719f492e7462824e15e01e1d8d90ebfe42504a5ed3637310e658ffc3
+19-11-2019 10:10:06:689 TH-    1280|writeUSBFileInfo. Return: true
+19-11-2019 10:10:06:692 TH-    1280|_tmain(). Return: 0.
+19-11-2019 10:10:58:251 TH-    7920|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:10:58:251 TH-    7920|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:10:58:252 TH-    7920|findDevices().
+19-11-2019 10:10:58:252 TH-    7920|InitializeCOM().
+19-11-2019 10:10:58:255 TH-    7920|InitializeCOM. Return: 0.
+19-11-2019 10:10:58:255 TH-    7920|ConnectToWMI().
+19-11-2019 10:10:58:308 TH-    7920|ConnectToWMI. Return: 0.
+19-11-2019 10:10:58:308 TH-    7920|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:10:58:308 TH-    7920|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:10:58:478 TH-    7920|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:10:58:478 TH-    7920|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:10:58:479 TH-    7920|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:10:58:479 TH-    7920|findDevices. Size: 1000202273280.
+19-11-2019 10:10:58:480 TH-    7920|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:10:58:481 TH-    7920|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_PMAP\3AB414E971DE7FED6FE976AE&0.
+19-11-2019 10:10:58:481 TH-    7920|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:10:58:482 TH-    7920|findDevices. Size: 15570455040.
+19-11-2019 10:10:58:483 TH-    7920|findDevices. Return: true.
+19-11-2019 10:10:58:484 TH-    7920|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 3AB414E971DE7FED6FE976AE. Vendor:  . Product:  . Matched: false. Name: . Size: 15570455040
+19-11-2019 10:10:58:484 TH-    7920|findRegistryDevices().
+19-11-2019 10:10:58:484 TH-    7920|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:10:58:484 TH-    7920|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:10:58:484 TH-    7920|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_173C\3AB414E971DE7FED6FE976AE
+19-11-2019 10:10:58:484 TH-    7920|setDeviceRegData().
+19-11-2019 10:10:58:484 TH-    7920|setDeviceRegData. Device found in registry USB\VID_0DD8&PID_173C\3AB414E971DE7FED6FE976AE. Serial: 3AB414E971DE7FED6FE976AE.
+19-11-2019 10:10:58:485 TH-    7920|setDeviceRegData. Return.
+19-11-2019 10:10:58:485 TH-    7920|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:10:58:485 TH-    7920|findRegistryDevices. Return: true.
+19-11-2019 10:10:58:485 TH-    7920|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 3AB414E971DE7FED6FE976AE. Vendor: 0DD8. Product: 173C. Matched: true. Name: . Size: 15570455040
+19-11-2019 10:11:05:198 TH-    7920|_tmain(). User option: 0.
+19-11-2019 10:11:23:740 TH-    7920|_tmain(). User device name: NetacOnlyDisk
+19-11-2019 10:11:25:666 TH-    7920|_tmain(). Operator: 1.
+19-11-2019 10:11:25:666 TH-    7920|writeUSBFileInfo( Index: 0, file: .\OperatorUSBs.dat)
+19-11-2019 10:11:25:666 TH-    7920|writeUSBFileInfo. uuid: 21c1525abd704081ff3637fed77c013f94a78902e7b8a2039855609a73f25b8c
+19-11-2019 10:11:25:668 TH-    7920|writeUSBFileInfo. Return: true
+19-11-2019 10:11:25:672 TH-    7920|_tmain(). Return: 0.
+19-11-2019 10:12:25:768 TH-    7552|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:12:25:769 TH-    7552|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:12:25:769 TH-    7552|findDevices().
+19-11-2019 10:12:25:769 TH-    7552|InitializeCOM().
+19-11-2019 10:12:25:771 TH-    7552|InitializeCOM. Return: 0.
+19-11-2019 10:12:25:771 TH-    7552|ConnectToWMI().
+19-11-2019 10:12:25:794 TH-    7552|ConnectToWMI. Return: 0.
+19-11-2019 10:12:25:794 TH-    7552|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:12:25:794 TH-    7552|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:12:26:121 TH-    7552|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:12:26:121 TH-    7552|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:12:26:121 TH-    7552|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:12:26:121 TH-    7552|findDevices. Size: 1000202273280.
+19-11-2019 10:12:26:121 TH-    7552|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:12:26:121 TH-    7552|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:12:26:121 TH-    7552|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:12:26:121 TH-    7552|findDevices. Size: 15578680320.
+19-11-2019 10:12:26:123 TH-    7552|findDevices. Return: true.
+19-11-2019 10:12:26:123 TH-    7552|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:12:26:123 TH-    7552|findRegistryDevices().
+19-11-2019 10:12:26:123 TH-    7552|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:12:26:123 TH-    7552|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:12:26:123 TH-    7552|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:12:26:123 TH-    7552|setDeviceRegData().
+19-11-2019 10:12:26:123 TH-    7552|setDeviceRegData. Return.
+19-11-2019 10:12:26:123 TH-    7552|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:12:26:123 TH-    7552|findRegistryDevices. Return: true.
+19-11-2019 10:12:26:127 TH-    7552|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:12:35:222 TH-    7152|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:12:35:222 TH-    7152|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:12:35:222 TH-    7152|findDevices().
+19-11-2019 10:12:35:222 TH-    7152|InitializeCOM().
+19-11-2019 10:12:35:227 TH-    7152|InitializeCOM. Return: 0.
+19-11-2019 10:12:35:227 TH-    7152|ConnectToWMI().
+19-11-2019 10:12:35:253 TH-    7152|ConnectToWMI. Return: 0.
+19-11-2019 10:12:35:253 TH-    7152|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:12:35:254 TH-    7152|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:12:35:390 TH-    7152|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:12:35:391 TH-    7152|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:12:35:391 TH-    7152|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:12:35:391 TH-    7152|findDevices. Size: 1000202273280.
+19-11-2019 10:12:35:391 TH-    7152|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:12:35:391 TH-    7152|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:12:35:391 TH-    7152|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:12:35:391 TH-    7152|findDevices. Size: 15578680320.
+19-11-2019 10:12:35:392 TH-    7152|findDevices. Return: true.
+19-11-2019 10:12:35:392 TH-    7152|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:12:35:392 TH-    7152|findRegistryDevices().
+19-11-2019 10:12:35:392 TH-    7152|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:12:35:393 TH-    7152|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:12:35:393 TH-    7152|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:12:35:393 TH-    7152|setDeviceRegData().
+19-11-2019 10:12:35:393 TH-    7152|setDeviceRegData. Return.
+19-11-2019 10:12:35:393 TH-    7152|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:12:35:393 TH-    7152|findRegistryDevices. Return: true.
+19-11-2019 10:12:35:396 TH-    7152|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:12:41:613 TH-    5488|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:12:41:615 TH-    5488|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:12:41:615 TH-    5488|findDevices().
+19-11-2019 10:12:41:615 TH-    5488|InitializeCOM().
+19-11-2019 10:12:41:618 TH-    5488|InitializeCOM. Return: 0.
+19-11-2019 10:12:41:619 TH-    5488|ConnectToWMI().
+19-11-2019 10:12:41:639 TH-    5488|ConnectToWMI. Return: 0.
+19-11-2019 10:12:41:640 TH-    5488|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:12:41:640 TH-    5488|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:12:41:753 TH-    5488|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:12:41:753 TH-    5488|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:12:41:753 TH-    5488|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:12:41:753 TH-    5488|findDevices. Size: 1000202273280.
+19-11-2019 10:12:41:754 TH-    5488|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:12:41:754 TH-    5488|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:12:41:754 TH-    5488|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:12:41:754 TH-    5488|findDevices. Size: 15578680320.
+19-11-2019 10:12:41:756 TH-    5488|findDevices. Return: true.
+19-11-2019 10:12:41:756 TH-    5488|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:12:41:756 TH-    5488|findRegistryDevices().
+19-11-2019 10:12:41:757 TH-    5488|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:12:41:757 TH-    5488|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:12:41:757 TH-    5488|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:12:41:757 TH-    5488|setDeviceRegData().
+19-11-2019 10:12:41:757 TH-    5488|setDeviceRegData. Return.
+19-11-2019 10:12:41:757 TH-    5488|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:12:41:757 TH-    5488|findRegistryDevices. Return: true.
+19-11-2019 10:12:41:763 TH-    5488|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:12:46:625 TH-    1852|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:12:46:626 TH-    1852|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:12:46:626 TH-    1852|findDevices().
+19-11-2019 10:12:46:626 TH-    1852|InitializeCOM().
+19-11-2019 10:12:46:632 TH-    1852|InitializeCOM. Return: 0.
+19-11-2019 10:12:46:632 TH-    1852|ConnectToWMI().
+19-11-2019 10:12:46:658 TH-    1852|ConnectToWMI. Return: 0.
+19-11-2019 10:12:46:658 TH-    1852|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:12:46:658 TH-    1852|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:12:46:774 TH-    1852|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:12:46:774 TH-    1852|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:12:46:775 TH-    1852|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:12:46:775 TH-    1852|findDevices. Size: 1000202273280.
+19-11-2019 10:12:46:775 TH-    1852|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:12:46:775 TH-    1852|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:12:46:775 TH-    1852|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:12:46:775 TH-    1852|findDevices. Size: 15578680320.
+19-11-2019 10:12:46:776 TH-    1852|findDevices. Return: true.
+19-11-2019 10:12:46:777 TH-    1852|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:12:46:777 TH-    1852|findRegistryDevices().
+19-11-2019 10:12:46:777 TH-    1852|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:12:46:777 TH-    1852|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:12:46:777 TH-    1852|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:12:46:777 TH-    1852|setDeviceRegData().
+19-11-2019 10:12:46:777 TH-    1852|setDeviceRegData. Return.
+19-11-2019 10:12:46:777 TH-    1852|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:12:46:777 TH-    1852|findRegistryDevices. Return: true.
+19-11-2019 10:12:46:781 TH-    1852|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:13:06:714 TH-    3160|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:13:06:714 TH-    3160|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:13:06:714 TH-    3160|findDevices().
+19-11-2019 10:13:06:715 TH-    3160|InitializeCOM().
+19-11-2019 10:13:06:719 TH-    3160|InitializeCOM. Return: 0.
+19-11-2019 10:13:06:719 TH-    3160|ConnectToWMI().
+19-11-2019 10:13:06:745 TH-    3160|ConnectToWMI. Return: 0.
+19-11-2019 10:13:06:745 TH-    3160|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:13:06:745 TH-    3160|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:13:06:901 TH-    3160|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:13:06:901 TH-    3160|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:13:06:901 TH-    3160|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:13:06:902 TH-    3160|findDevices. Size: 1000202273280.
+19-11-2019 10:13:06:902 TH-    3160|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:13:06:902 TH-    3160|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_JETFLASH&PROD_TRANSCEND_8GB&REV_8.07\874F7402&0.
+19-11-2019 10:13:06:903 TH-    3160|findDevices. Model: JetFlash Transcend 8GB USB Device.
+19-11-2019 10:13:06:903 TH-    3160|findDevices. Size: 7822241280.
+19-11-2019 10:13:06:906 TH-    3160|findDevices. Return: true.
+19-11-2019 10:13:06:906 TH-    3160|loggDevices. Device[ 0]: JetFlash Transcend 8GB USB Device. Serial: 874F7402. Vendor:  . Product:  . Matched: false. Name: . Size: 7822241280
+19-11-2019 10:13:06:906 TH-    3160|findRegistryDevices().
+19-11-2019 10:13:06:906 TH-    3160|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:13:06:906 TH-    3160|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:13:06:906 TH-    3160|findRegistryDevices. Name: 0. Value: USB\VID_8564&PID_1000\874F7402
+19-11-2019 10:13:06:906 TH-    3160|setDeviceRegData().
+19-11-2019 10:13:06:906 TH-    3160|setDeviceRegData. Device found in registry USB\VID_8564&PID_1000\874F7402. Serial: 874F7402.
+19-11-2019 10:13:06:907 TH-    3160|setDeviceRegData. Return.
+19-11-2019 10:13:06:907 TH-    3160|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:13:06:907 TH-    3160|findRegistryDevices. Return: true.
+19-11-2019 10:13:06:907 TH-    3160|loggDevices. Device[ 0]: JetFlash Transcend 8GB USB Device. Serial: 874F7402. Vendor: 8564. Product: 1000. Matched: true. Name: . Size: 7822241280
+19-11-2019 10:13:16:585 TH-    3160|_tmain(). User option: 0.
+19-11-2019 10:13:34:087 TH-    3160|_tmain(). User device name: JetFlashTranscend
+19-11-2019 10:13:45:101 TH-    3160|_tmain(). Operator: 1.
+19-11-2019 10:13:45:101 TH-    3160|writeUSBFileInfo( Index: 0, file: .\OperatorUSBs.dat)
+19-11-2019 10:13:45:101 TH-    3160|writeUSBFileInfo. uuid: b8b283858833d3778b13f4b8362ab179d73106e0d811671aa22460e81ebb1597
+19-11-2019 10:13:45:103 TH-    3160|writeUSBFileInfo. Return: true
+19-11-2019 10:13:45:108 TH-    3160|_tmain(). Return: 0.
+19-11-2019 10:14:27:295 TH-    4136|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:14:27:295 TH-    4136|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:14:27:296 TH-    4136|findDevices().
+19-11-2019 10:14:27:296 TH-    4136|InitializeCOM().
+19-11-2019 10:14:27:298 TH-    4136|InitializeCOM. Return: 0.
+19-11-2019 10:14:27:298 TH-    4136|ConnectToWMI().
+19-11-2019 10:14:27:332 TH-    4136|ConnectToWMI. Return: 0.
+19-11-2019 10:14:27:332 TH-    4136|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:14:27:332 TH-    4136|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:14:27:563 TH-    4136|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:14:27:563 TH-    4136|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:14:27:563 TH-    4136|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:14:27:563 TH-    4136|findDevices. Size: 1000202273280.
+19-11-2019 10:14:27:563 TH-    4136|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:14:27:563 TH-    4136|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&EDBD3A3&0.
+19-11-2019 10:14:27:563 TH-    4136|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:14:27:563 TH-    4136|findDevices. Size: 15578680320.
+19-11-2019 10:14:27:564 TH-    4136|findDevices. Return: true.
+19-11-2019 10:14:27:565 TH-    4136|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:14:27:565 TH-    4136|findRegistryDevices().
+19-11-2019 10:14:27:565 TH-    4136|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:14:27:565 TH-    4136|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:14:27:565 TH-    4136|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&3
+19-11-2019 10:14:27:565 TH-    4136|setDeviceRegData().
+19-11-2019 10:14:27:565 TH-    4136|setDeviceRegData. Return.
+19-11-2019 10:14:27:565 TH-    4136|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:14:27:565 TH-    4136|findRegistryDevices. Return: true.
+19-11-2019 10:14:27:571 TH-    4136|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:14:33:215 TH-    3896|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:14:33:215 TH-    3896|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:14:33:215 TH-    3896|findDevices().
+19-11-2019 10:14:33:215 TH-    3896|InitializeCOM().
+19-11-2019 10:14:33:219 TH-    3896|InitializeCOM. Return: 0.
+19-11-2019 10:14:33:219 TH-    3896|ConnectToWMI().
+19-11-2019 10:14:33:245 TH-    3896|ConnectToWMI. Return: 0.
+19-11-2019 10:14:33:245 TH-    3896|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:14:33:246 TH-    3896|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:14:33:443 TH-    3896|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:14:33:443 TH-    3896|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:14:33:443 TH-    3896|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:14:33:443 TH-    3896|findDevices. Size: 1000202273280.
+19-11-2019 10:14:33:445 TH-    3896|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:14:33:445 TH-    3896|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&EDBD3A3&0.
+19-11-2019 10:14:33:445 TH-    3896|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:14:33:445 TH-    3896|findDevices. Size: 15578680320.
+19-11-2019 10:14:33:447 TH-    3896|findDevices. Return: true.
+19-11-2019 10:14:33:447 TH-    3896|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:14:33:447 TH-    3896|findRegistryDevices().
+19-11-2019 10:14:33:448 TH-    3896|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:14:33:448 TH-    3896|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:14:33:448 TH-    3896|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&3
+19-11-2019 10:14:33:448 TH-    3896|setDeviceRegData().
+19-11-2019 10:14:33:448 TH-    3896|setDeviceRegData. Return.
+19-11-2019 10:14:33:448 TH-    3896|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:14:33:448 TH-    3896|findRegistryDevices. Return: true.
+19-11-2019 10:14:33:457 TH-    3896|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:14:46:019 TH-    4760|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:14:46:020 TH-    4760|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:14:46:020 TH-    4760|findDevices().
+19-11-2019 10:14:46:020 TH-    4760|InitializeCOM().
+19-11-2019 10:14:46:022 TH-    4760|InitializeCOM. Return: 0.
+19-11-2019 10:14:46:023 TH-    4760|ConnectToWMI().
+19-11-2019 10:14:46:046 TH-    4760|ConnectToWMI. Return: 0.
+19-11-2019 10:14:46:046 TH-    4760|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:14:46:046 TH-    4760|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:14:46:225 TH-    4760|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:14:46:225 TH-    4760|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:14:46:225 TH-    4760|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:14:46:225 TH-    4760|findDevices. Size: 1000202273280.
+19-11-2019 10:14:46:225 TH-    4760|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:14:46:225 TH-    4760|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&EDBD3A3&0.
+19-11-2019 10:14:46:225 TH-    4760|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:14:46:225 TH-    4760|findDevices. Size: 15578680320.
+19-11-2019 10:14:46:226 TH-    4760|findDevices. Return: true.
+19-11-2019 10:14:46:226 TH-    4760|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:14:46:227 TH-    4760|findRegistryDevices().
+19-11-2019 10:14:46:227 TH-    4760|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:14:46:227 TH-    4760|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:14:46:227 TH-    4760|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&3
+19-11-2019 10:14:46:227 TH-    4760|setDeviceRegData().
+19-11-2019 10:14:46:227 TH-    4760|setDeviceRegData. Return.
+19-11-2019 10:14:46:227 TH-    4760|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:14:46:227 TH-    4760|findRegistryDevices. Return: true.
+19-11-2019 10:14:46:231 TH-    4760|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:14:58:463 TH-    4412|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:14:58:463 TH-    4412|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:14:58:463 TH-    4412|findDevices().
+19-11-2019 10:14:58:463 TH-    4412|InitializeCOM().
+19-11-2019 10:14:58:466 TH-    4412|InitializeCOM. Return: 0.
+19-11-2019 10:14:58:466 TH-    4412|ConnectToWMI().
+19-11-2019 10:14:58:494 TH-    4412|ConnectToWMI. Return: 0.
+19-11-2019 10:14:58:494 TH-    4412|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:14:58:494 TH-    4412|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:14:58:649 TH-    4412|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:14:58:652 TH-    4412|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:14:58:652 TH-    4412|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:14:58:652 TH-    4412|findDevices. Size: 1000202273280.
+19-11-2019 10:14:58:653 TH-    4412|findDevices. Return: true.
+19-11-2019 10:14:58:653 TH-    4412|findRegistryDevices().
+19-11-2019 10:14:58:654 TH-    4412|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:14:58:654 TH-    4412|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:14:58:654 TH-    4412|findRegistryDevices. Error: 0 in index entry: 2.
+19-11-2019 10:14:58:654 TH-    4412|findRegistryDevices. Return: true.
+19-11-2019 10:14:58:659 TH-    4412|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:15:00:746 TH-    1524|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:15:00:746 TH-    1524|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:15:00:746 TH-    1524|findDevices().
+19-11-2019 10:15:00:746 TH-    1524|InitializeCOM().
+19-11-2019 10:15:00:754 TH-    1524|InitializeCOM. Return: 0.
+19-11-2019 10:15:00:754 TH-    1524|ConnectToWMI().
+19-11-2019 10:15:00:783 TH-    1524|ConnectToWMI. Return: 0.
+19-11-2019 10:15:00:783 TH-    1524|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:15:00:783 TH-    1524|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:15:00:917 TH-    1524|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:15:00:917 TH-    1524|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:15:00:917 TH-    1524|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:15:00:917 TH-    1524|findDevices. Size: 1000202273280.
+19-11-2019 10:15:00:922 TH-    1524|findDevices. Return: true.
+19-11-2019 10:15:00:923 TH-    1524|findRegistryDevices().
+19-11-2019 10:15:00:923 TH-    1524|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:15:00:923 TH-    1524|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:15:00:923 TH-    1524|findRegistryDevices. Error: 0 in index entry: 2.
+19-11-2019 10:15:00:923 TH-    1524|findRegistryDevices. Return: true.
+19-11-2019 10:15:00:928 TH-    1524|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:15:03:072 TH-    6620|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:15:03:072 TH-    6620|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:15:03:072 TH-    6620|findDevices().
+19-11-2019 10:15:03:072 TH-    6620|InitializeCOM().
+19-11-2019 10:15:03:076 TH-    6620|InitializeCOM. Return: 0.
+19-11-2019 10:15:03:076 TH-    6620|ConnectToWMI().
+19-11-2019 10:15:03:099 TH-    6620|ConnectToWMI. Return: 0.
+19-11-2019 10:15:03:099 TH-    6620|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:15:03:100 TH-    6620|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:15:03:272 TH-    6620|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:15:03:272 TH-    6620|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:15:03:272 TH-    6620|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:15:03:272 TH-    6620|findDevices. Size: 1000202273280.
+19-11-2019 10:15:03:276 TH-    6620|findDevices. Return: true.
+19-11-2019 10:15:03:276 TH-    6620|findRegistryDevices().
+19-11-2019 10:15:03:276 TH-    6620|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:15:03:276 TH-    6620|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:15:03:276 TH-    6620|findRegistryDevices. Error: 0 in index entry: 2.
+19-11-2019 10:15:03:276 TH-    6620|findRegistryDevices. Return: true.
+19-11-2019 10:15:03:280 TH-    6620|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:15:14:670 TH-    5836|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:15:14:671 TH-    5836|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:15:14:671 TH-    5836|findDevices().
+19-11-2019 10:15:14:671 TH-    5836|InitializeCOM().
+19-11-2019 10:15:14:674 TH-    5836|InitializeCOM. Return: 0.
+19-11-2019 10:15:14:674 TH-    5836|ConnectToWMI().
+19-11-2019 10:15:14:702 TH-    5836|ConnectToWMI. Return: 0.
+19-11-2019 10:15:14:703 TH-    5836|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:15:14:703 TH-    5836|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:15:14:986 TH-    5836|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:15:14:986 TH-    5836|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:15:14:986 TH-    5836|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:15:14:986 TH-    5836|findDevices. Size: 1000202273280.
+19-11-2019 10:15:14:987 TH-    5836|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:15:14:987 TH-    5836|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_JETFLASH&PROD_TRANSCEND_8GB&REV_8.07\874F7402&0.
+19-11-2019 10:15:14:987 TH-    5836|findDevices. Model: JetFlash Transcend 8GB USB Device.
+19-11-2019 10:15:14:987 TH-    5836|findDevices. Size: 7822241280.
+19-11-2019 10:15:14:988 TH-    5836|findDevices. Return: true.
+19-11-2019 10:15:14:988 TH-    5836|loggDevices. Device[ 0]: JetFlash Transcend 8GB USB Device. Serial: 874F7402. Vendor:  . Product:  . Matched: false. Name: . Size: 7822241280
+19-11-2019 10:15:14:988 TH-    5836|findRegistryDevices().
+19-11-2019 10:15:14:988 TH-    5836|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:15:14:988 TH-    5836|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:15:14:988 TH-    5836|findRegistryDevices. Name: 0. Value: USB\VID_8564&PID_1000\874F7402
+19-11-2019 10:15:14:988 TH-    5836|setDeviceRegData().
+19-11-2019 10:15:14:988 TH-    5836|setDeviceRegData. Device found in registry USB\VID_8564&PID_1000\874F7402. Serial: 874F7402.
+19-11-2019 10:15:14:988 TH-    5836|setDeviceRegData. Return.
+19-11-2019 10:15:14:988 TH-    5836|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:15:14:988 TH-    5836|findRegistryDevices. Return: true.
+19-11-2019 10:15:14:988 TH-    5836|loggDevices. Device[ 0]: JetFlash Transcend 8GB USB Device. Serial: 874F7402. Vendor: 8564. Product: 1000. Matched: true. Name: . Size: 7822241280
+19-11-2019 10:15:30:820 TH-    3052|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:15:30:820 TH-    3052|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:15:30:820 TH-    3052|findDevices().
+19-11-2019 10:15:30:820 TH-    3052|InitializeCOM().
+19-11-2019 10:15:30:823 TH-    3052|InitializeCOM. Return: 0.
+19-11-2019 10:15:30:823 TH-    3052|ConnectToWMI().
+19-11-2019 10:15:30:846 TH-    3052|ConnectToWMI. Return: 0.
+19-11-2019 10:15:30:846 TH-    3052|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:15:30:846 TH-    3052|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:15:31:023 TH-    3052|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:15:31:023 TH-    3052|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:15:31:023 TH-    3052|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:15:31:024 TH-    3052|findDevices. Size: 1000202273280.
+19-11-2019 10:15:31:026 TH-    3052|findDevices. Return: true.
+19-11-2019 10:15:31:026 TH-    3052|findRegistryDevices().
+19-11-2019 10:15:31:026 TH-    3052|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:15:31:026 TH-    3052|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:15:31:026 TH-    3052|findRegistryDevices. Error: 0 in index entry: 2.
+19-11-2019 10:15:31:026 TH-    3052|findRegistryDevices. Return: true.
+19-11-2019 10:15:31:029 TH-    3052|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:15:50:383 TH-    7788|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:15:50:384 TH-    7788|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:15:50:384 TH-    7788|findDevices().
+19-11-2019 10:15:50:384 TH-    7788|InitializeCOM().
+19-11-2019 10:15:50:388 TH-    7788|InitializeCOM. Return: 0.
+19-11-2019 10:15:50:388 TH-    7788|ConnectToWMI().
+19-11-2019 10:15:50:418 TH-    7788|ConnectToWMI. Return: 0.
+19-11-2019 10:15:50:418 TH-    7788|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:15:50:419 TH-    7788|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:15:50:555 TH-    7788|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:15:50:555 TH-    7788|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:15:50:555 TH-    7788|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:15:50:555 TH-    7788|findDevices. Size: 1000202273280.
+19-11-2019 10:15:50:555 TH-    7788|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:15:50:555 TH-    7788|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:15:50:555 TH-    7788|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:15:50:555 TH-    7788|findDevices. Size: 15578680320.
+19-11-2019 10:15:50:556 TH-    7788|findDevices. Return: true.
+19-11-2019 10:15:50:556 TH-    7788|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:15:50:556 TH-    7788|findRegistryDevices().
+19-11-2019 10:15:50:557 TH-    7788|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:15:50:557 TH-    7788|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:15:50:557 TH-    7788|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:15:50:557 TH-    7788|setDeviceRegData().
+19-11-2019 10:15:50:557 TH-    7788|setDeviceRegData. Return.
+19-11-2019 10:15:50:557 TH-    7788|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:15:50:557 TH-    7788|findRegistryDevices. Return: true.
+19-11-2019 10:15:50:564 TH-    7788|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:15:53:672 TH-    1820|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:15:53:672 TH-    1820|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:15:53:672 TH-    1820|findDevices().
+19-11-2019 10:15:53:672 TH-    1820|InitializeCOM().
+19-11-2019 10:15:53:677 TH-    1820|InitializeCOM. Return: 0.
+19-11-2019 10:15:53:677 TH-    1820|ConnectToWMI().
+19-11-2019 10:15:53:702 TH-    1820|ConnectToWMI. Return: 0.
+19-11-2019 10:15:53:702 TH-    1820|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:15:53:702 TH-    1820|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:15:53:850 TH-    1820|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:15:53:850 TH-    1820|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:15:53:850 TH-    1820|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:15:53:850 TH-    1820|findDevices. Size: 1000202273280.
+19-11-2019 10:15:53:851 TH-    1820|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:15:53:851 TH-    1820|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:15:53:851 TH-    1820|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:15:53:851 TH-    1820|findDevices. Size: 15578680320.
+19-11-2019 10:15:53:852 TH-    1820|findDevices. Return: true.
+19-11-2019 10:15:53:852 TH-    1820|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:15:53:852 TH-    1820|findRegistryDevices().
+19-11-2019 10:15:53:853 TH-    1820|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:15:53:853 TH-    1820|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:15:53:853 TH-    1820|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:15:53:853 TH-    1820|setDeviceRegData().
+19-11-2019 10:15:53:853 TH-    1820|setDeviceRegData. Return.
+19-11-2019 10:15:53:853 TH-    1820|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:15:53:854 TH-    1820|findRegistryDevices. Return: true.
+19-11-2019 10:15:53:858 TH-    1820|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:15:55:813 TH-    2244|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:15:55:813 TH-    2244|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:15:55:813 TH-    2244|findDevices().
+19-11-2019 10:15:55:814 TH-    2244|InitializeCOM().
+19-11-2019 10:15:55:816 TH-    2244|InitializeCOM. Return: 0.
+19-11-2019 10:15:55:816 TH-    2244|ConnectToWMI().
+19-11-2019 10:15:55:844 TH-    2244|ConnectToWMI. Return: 0.
+19-11-2019 10:15:55:844 TH-    2244|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:15:55:844 TH-    2244|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:15:55:947 TH-    2244|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:15:55:947 TH-    2244|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:15:55:948 TH-    2244|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:15:55:948 TH-    2244|findDevices. Size: 1000202273280.
+19-11-2019 10:15:55:948 TH-    2244|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:15:55:948 TH-    2244|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:15:55:948 TH-    2244|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:15:55:948 TH-    2244|findDevices. Size: 15578680320.
+19-11-2019 10:15:55:949 TH-    2244|findDevices. Return: true.
+19-11-2019 10:15:55:949 TH-    2244|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:15:55:949 TH-    2244|findRegistryDevices().
+19-11-2019 10:15:55:949 TH-    2244|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:15:55:949 TH-    2244|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:15:55:949 TH-    2244|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:15:55:950 TH-    2244|setDeviceRegData().
+19-11-2019 10:15:55:950 TH-    2244|setDeviceRegData. Return.
+19-11-2019 10:15:55:950 TH-    2244|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:15:55:950 TH-    2244|findRegistryDevices. Return: true.
+19-11-2019 10:15:55:956 TH-    2244|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:15:57:704 TH-    6900|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:15:57:704 TH-    6900|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:15:57:704 TH-    6900|findDevices().
+19-11-2019 10:15:57:704 TH-    6900|InitializeCOM().
+19-11-2019 10:15:57:707 TH-    6900|InitializeCOM. Return: 0.
+19-11-2019 10:15:57:707 TH-    6900|ConnectToWMI().
+19-11-2019 10:15:57:738 TH-    6900|ConnectToWMI. Return: 0.
+19-11-2019 10:15:57:738 TH-    6900|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:15:57:738 TH-    6900|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:15:57:861 TH-    6900|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:15:57:861 TH-    6900|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:15:57:862 TH-    6900|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:15:57:862 TH-    6900|findDevices. Size: 1000202273280.
+19-11-2019 10:15:57:862 TH-    6900|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:15:57:862 TH-    6900|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:15:57:862 TH-    6900|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:15:57:862 TH-    6900|findDevices. Size: 15578680320.
+19-11-2019 10:15:57:863 TH-    6900|findDevices. Return: true.
+19-11-2019 10:15:57:863 TH-    6900|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:15:57:863 TH-    6900|findRegistryDevices().
+19-11-2019 10:15:57:863 TH-    6900|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:15:57:864 TH-    6900|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:15:57:864 TH-    6900|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:15:57:864 TH-    6900|setDeviceRegData().
+19-11-2019 10:15:57:864 TH-    6900|setDeviceRegData. Return.
+19-11-2019 10:15:57:864 TH-    6900|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:15:57:864 TH-    6900|findRegistryDevices. Return: true.
+19-11-2019 10:15:57:872 TH-    6900|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:18:11:280 TH-    7268|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:18:11:280 TH-    7268|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:18:11:280 TH-    7268|findDevices().
+19-11-2019 10:18:11:280 TH-    7268|InitializeCOM().
+19-11-2019 10:18:11:292 TH-    7268|InitializeCOM. Return: 0.
+19-11-2019 10:18:11:292 TH-    7268|ConnectToWMI().
+19-11-2019 10:18:11:318 TH-    7268|ConnectToWMI. Return: 0.
+19-11-2019 10:18:11:318 TH-    7268|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:18:11:318 TH-    7268|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:18:11:578 TH-    7268|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:18:11:578 TH-    7268|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:18:11:578 TH-    7268|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:18:11:578 TH-    7268|findDevices. Size: 1000202273280.
+19-11-2019 10:18:11:578 TH-    7268|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:18:11:578 TH-    7268|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:18:11:578 TH-    7268|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:18:11:578 TH-    7268|findDevices. Size: 15578680320.
+19-11-2019 10:18:11:578 TH-    7268|findDevices. Return: true.
+19-11-2019 10:18:11:578 TH-    7268|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:18:11:578 TH-    7268|findRegistryDevices().
+19-11-2019 10:18:11:578 TH-    7268|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:18:11:578 TH-    7268|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:18:11:578 TH-    7268|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:18:11:578 TH-    7268|setDeviceRegData().
+19-11-2019 10:18:11:578 TH-    7268|setDeviceRegData. Return.
+19-11-2019 10:18:11:578 TH-    7268|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:18:11:578 TH-    7268|findRegistryDevices. Return: true.
+19-11-2019 10:18:11:598 TH-    7268|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:18:12:948 TH-    4696|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:18:12:948 TH-    4696|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:18:12:948 TH-    4696|findDevices().
+19-11-2019 10:18:12:948 TH-    4696|InitializeCOM().
+19-11-2019 10:18:12:948 TH-    4696|InitializeCOM. Return: 0.
+19-11-2019 10:18:12:948 TH-    4696|ConnectToWMI().
+19-11-2019 10:18:12:968 TH-    4696|ConnectToWMI. Return: 0.
+19-11-2019 10:18:12:968 TH-    4696|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:18:12:968 TH-    4696|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:18:13:078 TH-    4696|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:18:13:078 TH-    4696|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:18:13:078 TH-    4696|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:18:13:078 TH-    4696|findDevices. Size: 1000202273280.
+19-11-2019 10:18:13:078 TH-    4696|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:18:13:078 TH-    4696|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:18:13:088 TH-    4696|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:18:13:088 TH-    4696|findDevices. Size: 15578680320.
+19-11-2019 10:18:13:088 TH-    4696|findDevices. Return: true.
+19-11-2019 10:18:13:088 TH-    4696|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:18:13:088 TH-    4696|findRegistryDevices().
+19-11-2019 10:18:13:088 TH-    4696|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:18:13:088 TH-    4696|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:18:13:088 TH-    4696|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:18:13:088 TH-    4696|setDeviceRegData().
+19-11-2019 10:18:13:088 TH-    4696|setDeviceRegData. Return.
+19-11-2019 10:18:13:088 TH-    4696|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:18:13:088 TH-    4696|findRegistryDevices. Return: true.
+19-11-2019 10:18:13:098 TH-    4696|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:18:13:955 TH-    4940|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:18:13:955 TH-    4940|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:18:13:955 TH-    4940|findDevices().
+19-11-2019 10:18:13:955 TH-    4940|InitializeCOM().
+19-11-2019 10:18:13:959 TH-    4940|InitializeCOM. Return: 0.
+19-11-2019 10:18:13:959 TH-    4940|ConnectToWMI().
+19-11-2019 10:18:13:980 TH-    4940|ConnectToWMI. Return: 0.
+19-11-2019 10:18:13:980 TH-    4940|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:18:13:980 TH-    4940|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:18:14:214 TH-    4940|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:18:14:214 TH-    4940|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:18:14:215 TH-    4940|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:18:14:215 TH-    4940|findDevices. Size: 1000202273280.
+19-11-2019 10:18:14:215 TH-    4940|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:18:14:215 TH-    4940|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:18:14:216 TH-    4940|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:18:14:216 TH-    4940|findDevices. Size: 15578680320.
+19-11-2019 10:18:14:218 TH-    4940|findDevices. Return: true.
+19-11-2019 10:18:14:218 TH-    4940|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:18:14:218 TH-    4940|findRegistryDevices().
+19-11-2019 10:18:14:218 TH-    4940|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:18:14:219 TH-    4940|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:18:14:219 TH-    4940|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:18:14:219 TH-    4940|setDeviceRegData().
+19-11-2019 10:18:14:219 TH-    4940|setDeviceRegData. Return.
+19-11-2019 10:18:14:219 TH-    4940|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:18:14:219 TH-    4940|findRegistryDevices. Return: true.
+19-11-2019 10:18:14:231 TH-    4940|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:18:15:116 TH-    2568|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:18:15:116 TH-    2568|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:18:15:116 TH-    2568|findDevices().
+19-11-2019 10:18:15:116 TH-    2568|InitializeCOM().
+19-11-2019 10:18:15:116 TH-    2568|InitializeCOM. Return: 0.
+19-11-2019 10:18:15:116 TH-    2568|ConnectToWMI().
+19-11-2019 10:18:15:146 TH-    2568|ConnectToWMI. Return: 0.
+19-11-2019 10:18:15:146 TH-    2568|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:18:15:146 TH-    2568|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:18:15:276 TH-    2568|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:18:15:276 TH-    2568|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:18:15:276 TH-    2568|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:18:15:276 TH-    2568|findDevices. Size: 1000202273280.
+19-11-2019 10:18:15:276 TH-    2568|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:18:15:276 TH-    2568|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:18:15:276 TH-    2568|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:18:15:276 TH-    2568|findDevices. Size: 15578680320.
+19-11-2019 10:18:15:286 TH-    2568|findDevices. Return: true.
+19-11-2019 10:18:15:286 TH-    2568|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:18:15:286 TH-    2568|findRegistryDevices().
+19-11-2019 10:18:15:286 TH-    2568|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:18:15:286 TH-    2568|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:18:15:286 TH-    2568|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:18:15:286 TH-    2568|setDeviceRegData().
+19-11-2019 10:18:15:286 TH-    2568|setDeviceRegData. Return.
+19-11-2019 10:18:15:286 TH-    2568|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:18:15:286 TH-    2568|findRegistryDevices. Return: true.
+19-11-2019 10:18:15:286 TH-    2568|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:18:16:106 TH-    1888|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:18:16:106 TH-    1888|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:18:16:106 TH-    1888|findDevices().
+19-11-2019 10:18:16:106 TH-    1888|InitializeCOM().
+19-11-2019 10:18:16:116 TH-    1888|InitializeCOM. Return: 0.
+19-11-2019 10:18:16:116 TH-    1888|ConnectToWMI().
+19-11-2019 10:18:16:136 TH-    1888|ConnectToWMI. Return: 0.
+19-11-2019 10:18:16:136 TH-    1888|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:18:16:136 TH-    1888|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:18:16:296 TH-    1888|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:18:16:296 TH-    1888|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:18:16:296 TH-    1888|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:18:16:296 TH-    1888|findDevices. Size: 1000202273280.
+19-11-2019 10:18:16:296 TH-    1888|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:18:16:296 TH-    1888|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:18:16:296 TH-    1888|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:18:16:296 TH-    1888|findDevices. Size: 15578680320.
+19-11-2019 10:18:16:306 TH-    1888|findDevices. Return: true.
+19-11-2019 10:18:16:306 TH-    1888|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:18:16:306 TH-    1888|findRegistryDevices().
+19-11-2019 10:18:16:306 TH-    1888|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:18:16:306 TH-    1888|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:18:16:306 TH-    1888|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:18:16:306 TH-    1888|setDeviceRegData().
+19-11-2019 10:18:16:306 TH-    1888|setDeviceRegData. Return.
+19-11-2019 10:18:16:306 TH-    1888|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:18:16:306 TH-    1888|findRegistryDevices. Return: true.
+19-11-2019 10:18:16:316 TH-    1888|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:18:17:192 TH-    7232|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:18:17:192 TH-    7232|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:18:17:192 TH-    7232|findDevices().
+19-11-2019 10:18:17:192 TH-    7232|InitializeCOM().
+19-11-2019 10:18:17:195 TH-    7232|InitializeCOM. Return: 0.
+19-11-2019 10:18:17:195 TH-    7232|ConnectToWMI().
+19-11-2019 10:18:17:216 TH-    7232|ConnectToWMI. Return: 0.
+19-11-2019 10:18:17:216 TH-    7232|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:18:17:216 TH-    7232|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:18:17:356 TH-    7232|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:18:17:356 TH-    7232|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:18:17:356 TH-    7232|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:18:17:356 TH-    7232|findDevices. Size: 1000202273280.
+19-11-2019 10:18:17:356 TH-    7232|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:18:17:356 TH-    7232|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:18:17:356 TH-    7232|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:18:17:356 TH-    7232|findDevices. Size: 15578680320.
+19-11-2019 10:18:17:356 TH-    7232|findDevices. Return: true.
+19-11-2019 10:18:17:356 TH-    7232|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:18:17:356 TH-    7232|findRegistryDevices().
+19-11-2019 10:18:17:356 TH-    7232|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:18:17:356 TH-    7232|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:18:17:356 TH-    7232|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:18:17:356 TH-    7232|setDeviceRegData().
+19-11-2019 10:18:17:356 TH-    7232|setDeviceRegData. Return.
+19-11-2019 10:18:17:356 TH-    7232|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:18:17:356 TH-    7232|findRegistryDevices. Return: true.
+19-11-2019 10:18:17:366 TH-    7232|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 10:18:18:296 TH-    4044|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 10:18:18:306 TH-    4044|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 10:18:18:306 TH-    4044|findDevices().
+19-11-2019 10:18:18:306 TH-    4044|InitializeCOM().
+19-11-2019 10:18:18:306 TH-    4044|InitializeCOM. Return: 0.
+19-11-2019 10:18:18:306 TH-    4044|ConnectToWMI().
+19-11-2019 10:18:18:336 TH-    4044|ConnectToWMI. Return: 0.
+19-11-2019 10:18:18:336 TH-    4044|SetSecurityLevelOnWMIConnection().
+19-11-2019 10:18:18:336 TH-    4044|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 10:18:18:486 TH-    4044|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 10:18:18:486 TH-    4044|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 10:18:18:486 TH-    4044|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 10:18:18:486 TH-    4044|findDevices. Size: 1000202273280.
+19-11-2019 10:18:18:486 TH-    4044|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 10:18:18:486 TH-    4044|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_NETAC&PROD_ONLYDISK&REV_8.07\7&37BCED05&0.
+19-11-2019 10:18:18:486 TH-    4044|findDevices. Model: Netac OnlyDisk USB Device.
+19-11-2019 10:18:18:486 TH-    4044|findDevices. Size: 15578680320.
+19-11-2019 10:18:18:486 TH-    4044|findDevices. Return: true.
+19-11-2019 10:18:18:486 TH-    4044|loggDevices. Device[ 0]: Netac OnlyDisk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 15578680320
+19-11-2019 10:18:18:486 TH-    4044|findRegistryDevices().
+19-11-2019 10:18:18:486 TH-    4044|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 10:18:18:486 TH-    4044|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 10:18:18:486 TH-    4044|findRegistryDevices. Name: 0. Value: USB\VID_0DD8&PID_2300\6&843dbf5&0&2
+19-11-2019 10:18:18:486 TH-    4044|setDeviceRegData().
+19-11-2019 10:18:18:486 TH-    4044|setDeviceRegData. Return.
+19-11-2019 10:18:18:486 TH-    4044|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 10:18:18:486 TH-    4044|findRegistryDevices. Return: true.
+19-11-2019 10:18:18:496 TH-    4044|_tmain(). No USB detected in the system. Return: 1.
+19-11-2019 17:49:57:132 TH-    8624|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+19-11-2019 17:49:57:133 TH-    8624|_tmain(). Result file name: .\OperatorUSBs.dat.
+19-11-2019 17:49:57:133 TH-    8624|findDevices().
+19-11-2019 17:49:57:133 TH-    8624|InitializeCOM().
+19-11-2019 17:49:57:135 TH-    8624|InitializeCOM. Return: 0.
+19-11-2019 17:49:57:135 TH-    8624|ConnectToWMI().
+19-11-2019 17:49:57:929 TH-    8624|ConnectToWMI. Return: 0.
+19-11-2019 17:49:57:930 TH-    8624|SetSecurityLevelOnWMIConnection().
+19-11-2019 17:49:57:930 TH-    8624|SetSecurityLevelOnWMIConnection. Return: 0.
+19-11-2019 17:50:09:244 TH-    8624|findDevices. Name: \\.\PHYSICALDRIVE0.
+19-11-2019 17:50:09:244 TH-    8624|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+19-11-2019 17:50:09:244 TH-    8624|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+19-11-2019 17:50:09:244 TH-    8624|findDevices. Size: 1000202273280.
+19-11-2019 17:50:09:279 TH-    8624|findDevices. Name: \\.\PHYSICALDRIVE1.
+19-11-2019 17:50:09:279 TH-    8624|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\7&36AAAD92&0.
+19-11-2019 17:50:09:280 TH-    8624|findDevices. Model: Generic Flash Disk USB Device.
+19-11-2019 17:50:09:280 TH-    8624|findDevices. Size: 16919400960.
+19-11-2019 17:50:09:282 TH-    8624|findDevices. Return: true.
+19-11-2019 17:50:09:282 TH-    8624|loggDevices. Device[ 0]: Generic Flash Disk USB Device. Serial: 7. Vendor:  . Product:  . Matched: false. Name: . Size: 16919400960
+19-11-2019 17:50:09:282 TH-    8624|findRegistryDevices().
+19-11-2019 17:50:09:282 TH-    8624|findRegistryDevices. Error: 0 in index entry: 0.
+19-11-2019 17:50:09:282 TH-    8624|findRegistryDevices. Error: 0 in index entry: 1.
+19-11-2019 17:50:09:282 TH-    8624|findRegistryDevices. Name: 0. Value: USB\VID_058F&PID_6387\6&843dbf5&0&2
+19-11-2019 17:50:09:283 TH-    8624|setDeviceRegData().
+19-11-2019 17:50:09:283 TH-    8624|setDeviceRegData. Device found in registry USB\VID_058F&PID_6387\6&843dbf5&0&2. Serial: 7.
+19-11-2019 17:50:09:283 TH-    8624|setDeviceRegData. Return.
+19-11-2019 17:50:09:283 TH-    8624|findRegistryDevices. Error: 0 in index entry: 3.
+19-11-2019 17:50:09:283 TH-    8624|findRegistryDevices. Return: true.
+19-11-2019 17:50:09:283 TH-    8624|loggDevices. Device[ 0]: Generic Flash Disk USB Device. Serial: 7. Vendor: 058F. Product: 6387. Matched: true. Name: . Size: 16919400960
+19-11-2019 17:50:14:255 TH-    8624|_tmain(). User option: 0.
+20-11-2019 12:32:03:866 TH-    6560|_tmain()----- Ver: 1.0.0.0. Revision: 11205
+20-11-2019 12:32:03:867 TH-    6560|_tmain(). Result file name: .\OperatorUSBs.dat.
+20-11-2019 12:32:03:867 TH-    6560|findDevices().
+20-11-2019 12:32:03:882 TH-    6560|InitializeCOM().
+20-11-2019 12:32:03:885 TH-    6560|InitializeCOM. Return: 0.
+20-11-2019 12:32:03:886 TH-    6560|ConnectToWMI().
+20-11-2019 12:32:03:907 TH-    6560|ConnectToWMI. Return: 0.
+20-11-2019 12:32:03:907 TH-    6560|SetSecurityLevelOnWMIConnection().
+20-11-2019 12:32:03:907 TH-    6560|SetSecurityLevelOnWMIConnection. Return: 0.
+20-11-2019 12:32:04:259 TH-    6560|findDevices. Name: \\.\PHYSICALDRIVE0.
+20-11-2019 12:32:04:260 TH-    6560|findDevices. PNPDeviceID: IDE\DISKWDC_WD10JPVX-75JC3T0____________________02.01A02\5&25D864BD&0&0.0.0.
+20-11-2019 12:32:04:260 TH-    6560|findDevices. Model: WDC WD10JPVX-75JC3T0 ATA Device.
+20-11-2019 12:32:04:260 TH-    6560|findDevices. Size: 1000202273280.
+20-11-2019 12:32:04:261 TH-    6560|findDevices. Name: \\.\PHYSICALDRIVE1.
+20-11-2019 12:32:04:261 TH-    6560|findDevices. PNPDeviceID: USBSTOR\DISK&VEN_WD&PROD_ELEMENTS_25A2&REV_1021\57585431413938393241544E&0.
+20-11-2019 12:32:04:261 TH-    6560|findDevices. Model: WD Elements 25A2 USB Device.
+20-11-2019 12:32:04:261 TH-    6560|findDevices. Size: 1000169372160.
+20-11-2019 12:32:04:264 TH-    6560|findDevices. Return: true.
+20-11-2019 12:32:04:264 TH-    6560|loggDevices. Device[ 0]: WD Elements 25A2 USB Device. Serial: 57585431413938393241544E. Vendor:  . Product:  . Matched: false. Name: . Size: 1000169372160
+20-11-2019 12:32:04:264 TH-    6560|findRegistryDevices().
+20-11-2019 12:32:04:264 TH-    6560|findRegistryDevices. Name: 0. Value: USB\VID_1058&PID_25A2\57585431413938393241544E
+20-11-2019 12:32:04:264 TH-    6560|setDeviceRegData().
+20-11-2019 12:32:04:265 TH-    6560|setDeviceRegData. Device found in registry USB\VID_1058&PID_25A2\57585431413938393241544E. Serial: 57585431413938393241544E.
+20-11-2019 12:32:04:265 TH-    6560|setDeviceRegData. Return.
+20-11-2019 12:32:04:265 TH-    6560|findRegistryDevices. Error: 0 in index entry: 1.
+20-11-2019 12:32:04:265 TH-    6560|findRegistryDevices. Error: 0 in index entry: 2.
+20-11-2019 12:32:04:265 TH-    6560|findRegistryDevices. Error: 0 in index entry: 3.
+20-11-2019 12:32:04:265 TH-    6560|findRegistryDevices. Return: true.
+20-11-2019 12:32:04:265 TH-    6560|loggDevices. Device[ 0]: WD Elements 25A2 USB Device. Serial: 57585431413938393241544E. Vendor: 1058. Product: 25A2. Matched: true. Name: . Size: 1000169372160
+20-11-2019 12:32:08:823 TH-    6560|_tmain(). User option: 0.
+20-11-2019 12:32:30:619 TH-    6560|_tmain(). User device name: WDELEMENTS25A2Usb
+20-11-2019 12:32:36:232 TH-    6560|_tmain(). Operator: 1.
+20-11-2019 12:32:36:232 TH-    6560|writeUSBFileInfo( Index: 0, file: .\OperatorUSBs.dat)
+20-11-2019 12:32:36:232 TH-    6560|writeUSBFileInfo. uuid: eb755ef64efa0222066762982defef437d8187421dec6cf244054c599734993f
+20-11-2019 12:32:36:283 TH-    6560|writeUSBFileInfo. Return: true
+20-11-2019 12:32:36:292 TH-    6560|_tmain(). Return: 0.

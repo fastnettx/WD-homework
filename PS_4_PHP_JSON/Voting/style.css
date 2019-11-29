@@ -1,0 +1,55 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 2px inset white;
+    width: 50%;
+    height: 90%;
+    margin: 3% auto;
+    font-family: Georgia;
+}
+
+h1 {
+    text-align: center;
+}
+
+.title {
+    color: #1f1f1f;
+    margin: 5px 30px;
+    font-size: 24px;
+}
+
+.content {
+    margin: 10px 30px;
+    font-size: 20px;
+}
+
+.show {
+    margin: 15px auto;
+}
+
+form > div > input {
+    width: 170px;
+    height: 40px;
+    color: white;
+    background-color: #acacac;
+    font-size: 20px;
+}
+
+form > div > input:hover {
+    background-color: #4b4b4b;
+}
+
+.thoice {
+    margin: 0 30px;
+}
+
+.back {
+    margin: 10px 50px;
+}
+
+.chart_wrap {
+    position: relative;
+    margin: 20px;
+}
