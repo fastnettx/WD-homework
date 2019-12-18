@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: "BLACKJAR";
+    src: url("font/BLACKJAR.TTF");
+}
+
+.header {
+    background-image: url("images/blue-pattern.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 104vh;
+}
+
+.header-container {
+    height: 100%;
+    background-image: url("images/iphone.png");
+    background-position: 25% 61vh;
+    background-repeat: no-repeat;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 15%;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    box-shadow: 10px 10px 2px 2px #0f3280;
+    font-family: 'Kaushan Script', cursive;
+    justify-content: center;
+    font-size: 50px;
+    color: #3498db;
+}
+
+.nav {
+    display: flex;
+    font-size: 28px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 85%;
+    margin: 50px 0;
+    text-align: right;
+    justify-content: right;
+    color: white;
+}
+
+.header-title {
+    font-size: 70px;
+    font-family: BlackJar, sans-serif;
+}
+
+.header-text {
+    margin: 20px 0;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+
+.header-button {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+    width: 170px;
+    height: 54px;
+    border: 2px solid #fff;
+    color: #fff;
+
+}
+
+.header-content-button {
+    margin-left: auto;
+    margin-top: 12px;
+}
+
+input[type=button], button {
+    margin-left: 20px;
+    font-size: 14px;
+    width: 60%;
+    text-transform: uppercase;
+    height: 100%;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+div > i {
+    align-self: center;
+    margin: 20px;
+}
+
+.iphone5 {
+    margin-left: 20%;
+    margin-top: -7%;
+}
+
+.content-about {
+    display: flex;
+    background-color: #f4f4f4;
+    background-image: url("images/ipad.png");
+    height: 104vh;
+    background-repeat: no-repeat;
+    background-position: 71vw 24vh;
+}
+
+
+.about-me {
+    margin: 22vh 15vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: semi-condensed;
+    color: #595c64;
+}
+
+.text_title {
+    font-size: 36px;
+    letter-spacing: 0.1px;
+    word-spacing: 0.1px;
+}
+
+.main-text {
+    width: 60%;
+    margin: 5vh 0;
+    font-size: 14px;
+    line-height: 180%;
+    letter-spacing: 0.4px;
+}
+
+.additional-text {
+    font-size: 14px;
+    width: 56%;
+    margin: -1vh 5px;
+    padding-left: 19px;
+    border-left: 5px solid #3795f9;
+    line-height: 160%;
+    font-style: italic;
+    letter-spacing: 0.4px;
+}
+
+.about-me-button {
+    margin-top: 35px;
+}
+
+.blue-button {
+    color: #14af8f;
+}
+
+.blue-stroke {
+    border: 2px solid #14af8f;
+    color: #14af8f;
+}
+
+.portfolio {
+    display: flex;
+    background-color: white;
+    background-image: url("images/devices.png");
+    height: 104vh;
+    background-repeat: no-repeat;
+    background-position: -3vw 43vh;
+
+}
+
+.portfolio-content {
+    margin: 7% 0 0 56%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: semi-condensed;
+    color: #595c64;
+}
+
+.portfolio-content > .main-text {
+    font-style: italic;
+    font-weight: bold;
+    width: 65%;
+}
+
+.portfolio-content > .additional-text {
+    border-left: none;
+    margin: 0;
+    padding: 0;
+    width: 66%;
+    font-style: normal;
+}
+
+.portfolio-content-button {
+    margin-top: 5%;
+}
+
+.pink-button {
+    color: #ea4c89;
+}
+
+.pink-stroke {
+    width: 220px;
+    border: 2px solid #ea4c89;
+    color: #ea4c89;
+}
+
+.donate {
+    display: flex;
+    background-color: #0fad8c;
+    height: 52vh;
+}
+
+.donate-content {
+    margin: 7% auto;
+    font-family: 'Montserrat', sans-serif;
+    font-stretch: semi-condensed;
+    color: white;
+}
+
+.donate-content-button {
+    margin: 8% 19%;
+}
+
+.white-button {
+    color: white;
+}
+
+.white-stroke {
+    width: 220px;
+    border: 2px solid white;
+    color: white;
+}
+
+.contact {
+    background-color: #f4f4f4;
+    height: 105vh;
+    display: flex;
+}
+
+.contact-content {
+    margin: 18% auto;
+    width: 27%;
+}
+
+.socials-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.a_circle {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #545454;
+    border-radius: 50px;
+
+}
+
+.a_circle i {
+    margin: 14px;
+    font-size: 22px;
+}
+
+.subscription {
+    width: 130%;
+    display: flex;
+    flex-direction: row;
+    margin: 17% -9%;
+
+}
+
+.contact-email {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 215px;
+    height: 45px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.subscription-text {
+    align-self: center;
+    letter-spacing: 0.8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: #545454;
+}
+
+input[type=email] {
+    margin-left: 10%;
+    width: 70%;
+    border: none;
+    font-style: italic;
+}
+.footer{
+    background-color: white;
+    height: 15vh;
+
+}
+.to-top{
+    text-align: center;
+    margin-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 11px;
+}
+.to-top span{
+    font-style: normal;
+
+}
+.colour-to-top{
+    color: #6dc5ea;
+
+}
+

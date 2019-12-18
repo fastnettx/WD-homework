@@ -1,7 +1,6 @@
 const API_URL = 'https://picsum.photos/';
 const BIG_SIZE = '600/400';
 const SMALL_SIZE = '60';
-
 const IMAGES = [
     '?image=1080',
     '?image=1079',
@@ -12,7 +11,6 @@ const IMAGES = [
 ];
 const leftArrow = 37;
 const rightArrow = 39;
-
 $(document).ready(function () {
     const sliderPreviews = $('.slider-previews');
     for (let i = 0; i < IMAGES.length; i++) {
@@ -24,7 +22,6 @@ $(document).ready(function () {
             elementImage.addClass("current");
         }
     }
-
     $('.slider .slider-previews li img').click(function () {
         const selectedImage = $(this).attr("src");
         const imageNumber = "https://picsum.photos/600/400/?image=" +
@@ -33,7 +30,6 @@ $(document).ready(function () {
         $('.slider-current img').attr('src', imageNumber);
         $(this).addClass("current");
     });
-
     $(document).keydown(function (e) {
         const element = $('.current');
         let elementId = element.attr('id');
@@ -45,7 +41,7 @@ $(document).ready(function () {
             goToIdSlide(elementId - 1);
         }
         if (e.keyCode === rightArrow) {
-            if (elementId == IMAGES.length-1) {
+            if (elementId == IMAGES.length - 1) {
                 elementId = -1;
             }
             element.removeClass('current');
