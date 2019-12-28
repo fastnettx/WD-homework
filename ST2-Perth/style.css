@@ -1,12 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
 }
 
 @font-face {
@@ -22,6 +21,8 @@ body {
 }
 
 .header-container {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     background-image: url("images/iphone.png");
     background-position: 25% 61vh;
@@ -61,10 +62,53 @@ body {
     flex-direction: column;
     height: 40%;
     width: 85%;
-    margin: 50px 0;
+    margin: 8vh 0;
     text-align: right;
     justify-content: right;
     color: white;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f3787a;
+    height: 104vh;
+    width: 100vw;
+    opacity: 0.8;
+}
+
+.close {
+    margin: 5vh 80vw;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.nav-group {
+    margin-top: 10vh;
+    margin-left: 40vw;
+}
+
+.nav-icons span {
+    white-space: nowrap;
+    font-style: italic;
+    margin: 10px 50px;
+    font-size: 24px;
+    color: white;
+}
+
+
+.close i {
+    color: white;
+    font-size: 30px;
+}
+
+.visibility {
+    display: none;
 }
 
 .header-title {
@@ -86,7 +130,6 @@ body {
     height: 54px;
     border: 2px solid #fff;
     color: #fff;
-
 }
 
 .header-content-button {
@@ -103,6 +146,7 @@ input[type=button], button {
     color: white;
     background-color: transparent;
     border: none;
+    outline: none;
 }
 
 div > i {
@@ -123,7 +167,6 @@ div > i {
     background-repeat: no-repeat;
     background-position: 71vw 24vh;
 }
-
 
 .about-me {
     margin: 22vh 15vw;
@@ -163,7 +206,7 @@ div > i {
     margin-top: 35px;
 }
 
-.blue-button {
+.blue-button, input[class=blue-button] {
     color: #14af8f;
 }
 
@@ -179,7 +222,6 @@ div > i {
     height: 104vh;
     background-repeat: no-repeat;
     background-position: -3vw 43vh;
-
 }
 
 .portfolio-content {
@@ -209,7 +251,7 @@ div > i {
     margin-top: 5%;
 }
 
-.pink-button {
+.pink-button, input[class=pink-button] {
     color: #ea4c89;
 }
 
@@ -263,17 +305,15 @@ div > i {
     justify-content: space-around;
 }
 
-
 .a_circle {
     width: 50px;
     height: 50px;
     border: 3px solid #545454;
     border-radius: 50px;
-
 }
 
 .a_circle i {
-    margin: 14px;
+    margin: 14px 13px;
     font-size: 22px;
 }
 
@@ -282,7 +322,16 @@ div > i {
     display: flex;
     flex-direction: row;
     margin: 17% -9%;
+}
 
+.nav-icons {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 20px;
+    color: #4eacdd;
+    background-color: white;
+    border: 3px solid white;
 }
 
 .contact-email {
@@ -311,12 +360,13 @@ input[type=email] {
     border: none;
     font-style: italic;
 }
-.footer{
+
+.footer {
     background-color: white;
     height: 15vh;
-
 }
-.to-top{
+
+.to-top {
     text-align: center;
     margin-top: 3%;
     font-family: 'Montserrat', sans-serif;
@@ -324,12 +374,144 @@ input[type=email] {
     font-weight: bold;
     font-size: 11px;
 }
-.to-top span{
-    font-style: normal;
 
+.to-top span {
+    font-style: normal;
 }
-.colour-to-top{
+
+.colour-to-top {
     color: #6dc5ea;
 
+}
+
+input[type=button]:hover, button:hover {
+    cursor: pointer;
+}
+
+.nav:hover, .header-button:hover, .a_circle:hover, #close:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px #36879a;
+}
+
+@media screen and (max-width: 1120px) {
+    .portfolio {
+        height: 90vw;
+        background-position: 0 45vw;
+        background-size: 75%;
+    }
+
+    .portfolio-content {
+        margin: 7vh 4vw;
+    }
+
+    .contact-content {
+        margin: 10% auto;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content-about {
+        background-size: 40%;
+    }
+
+    .about-me {
+        margin: 5vh 10vw;
+    }
+
+    .header-text {
+        font-size: 26px;
+    }
+
+    .portfolio {
+        height: 80vw;
+        background-position: 30vw 50vh;
+        background-size: 55%;
+    }
+
+    .portfolio-content-button {
+        margin-top: 0;
+    }
+
+    .text_title {
+        font-size: 26px;
+    }
+
+    .contact-content {
+        margin: 8% auto;
+        width: 40%;
+    }
+
+    .contact {
+        height: auto;
+    }
+
+    .nav-group {
+        margin-left: 15vw;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header-container {
+        background-position: 25% 61vh;
+        background-size: 25%;
+    }
+
+    .header-content {
+        margin: 1vh 0;
+    }
+
+    .portfolio {
+        background-position: 50vw 50vh;
+        background-size: 40%;
+    }
+
+    .donate {
+        height: auto;
+    }
+
+    .a_circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .a_circle i {
+        margin: 7px;
+        font-size: 16px;
+    }
+
+    .header {
+        height: 70vh;
+    }
+
+    .content-about, .header, .portfolio, .donate, .contact {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+    }
+
+    .header-title {
+        font-size: 40px;
+    }
+
+    .header-text, .text_title {
+        font-size: 18px;
+    }
+
+    .main-text, .additional-text {
+        font-size: 12px;
+    }
+
+    .portfolio {
+        background-position: 60vw 50vh;
+        background-size: 25%;
+    }
 }
 

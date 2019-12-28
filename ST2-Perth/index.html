@@ -9,18 +9,28 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'
           integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'>
-
 </head>
 <body>
 <div class="header">
-    <div class="header-container">
-        <div class="SHOW FOR SURPRIZE!">
+    <div id="header-menu" class="header-menu visibility">
+        <div class="close">
+            <i id="close" class="fas fa-times"></i>
         </div>
+        <div class="nav-group">
+            <div class="icons">
+                <div class="a_circle nav-icons"><i class="fas fa-home"></i> <span>home</span></div>
+                <div class="a_circle nav-icons"><i class="far fa-heart"></i><span>about me</span></div>
+                <div class="a_circle nav-icons"><i class="fas fa-tv"></i><span>portfolio</span></div>
+                <div class="a_circle nav-icons"><i class="far fa-envelope"></i><span>drop me a line</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="header-container">
         <div class="header-nav">
             <div class="logo">
                 p
             </div>
-            <div class="nav">
+            <div id="nav" class="nav">
                 <i class="fas fa-align-justify"></i>
             </div>
         </div>
@@ -39,10 +49,6 @@
                     <i class="fas fa-cloud-download-alt"></i>
                 </div>
             </div>
-
-        </div>
-        <div class="iphone5">
-
         </div>
     </div>
 </div>
@@ -65,13 +71,11 @@
             </div>
             <div class="about-me-button">
                 <div class="header-button blue-button blue-stroke">
-                    <input type="button" value="SAY HELLO" style="color: #14af8f">
+                    <input type="button" class="blue-button" value="SAY HELLO">
                     <i class="fas fa-envelope"></i>
                 </div>
             </div>
         </div>
-
-
     </div>
     <div class="portfolio">
         <div class="portfolio-content">
@@ -88,13 +92,11 @@
             </div>
             <div class="portfolio-content-button">
                 <div class="header-button pink-button pink-stroke">
-                    <input type="button" value="VIEW ON DRIBBBLE" style="color: #ea4c89">
+                    <input type="button" class="pink-button" value="VIEW ON DRIBBBLE">
                     <i class="fas fa-basketball-ball"></i>
                 </div>
             </div>
         </div>
-
-
     </div>
     <div class="donate">
         <div class="donate-content">
@@ -103,13 +105,11 @@
             </div>
             <div class="donate-content-button">
                 <div class="header-button white-button white-stroke">
-                    <button style="color: white">BUY ME A <strong><i>BEER?</i></strong></button>
+                    <button>BUY ME A <strong><i>BEER?</i></strong></button>
                     <i class="fas fa-beer"></i>
                 </div>
             </div>
         </div>
-
-
     </div>
     <div class="contact">
         <div class="contact-content">
@@ -118,7 +118,6 @@
                 <div class="a_circle"><i class="fab fa-facebook-f"></i></div>
                 <div class="a_circle"><i class="fas fa-dove"></i></div>
                 <div class="a_circle"><i class="fab fa-telegram-plane"></i></div>
-
             </div>
             <div class="subscription">
                 <div class="subscription-text">
@@ -128,11 +127,8 @@
                     <input type="email" placeholder="Enter Email">
                     <i class="fas fa-envelope blue-button"></i>
                 </div>
-
             </div>
         </div>
-
-
     </div>
 </div>
 <div class="footer">
@@ -140,5 +136,13 @@
         <span>© 2013</span> <span class="colour-to-top">Perth.</span> Breeding pixels since the naughties.
     </div>
 </div>
+<script>
+    document.getElementById('nav').onclick = function () {
+        document.getElementById('header-menu').classList.remove('visibility');
+    }
+    document.getElementById('close').onclick = function () {
+        document.getElementById('header-menu').classList.add('visibility');
+    }
+</script>
 </body>
 </html>
