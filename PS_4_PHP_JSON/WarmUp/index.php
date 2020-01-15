@@ -14,7 +14,12 @@ session_start();
         <h3>Посчитать сумму чисел от -1000 до 1000 </h3>
         <input type="submit" name="sumOfNumbersFirst" value="Показать">
         <div class="result">Сумма чисел равна:
-            <?= isset($_SESSION['sumOfNumbersFirst']) ? $_SESSION['sumOfNumbersFirst'] : '' ?>
+            <?php
+            if (isset($_SESSION['sumOfNumbersFirst'])) {
+                echo $_SESSION['sumOfNumbersFirst'];
+                unset($_SESSION['sumOfNumbersFirst']);
+            }
+            ?>
         </div>
     </form>
 </section>
@@ -23,7 +28,12 @@ session_start();
         <h3>Посчитать сумму чисел от -1000 до 1000, суммируя только числа которые заканчиваются на 2,3, и 7 </h3>
         <input type="submit" name="sumOfNumbersSecond" value="Показать">
         <div class="result">Сумма чисел равна:
-            <?= isset($_SESSION['sumOfNumbersSecond']) ? $_SESSION['sumOfNumbersSecond'] : '' ?>
+            <?php
+            if (isset($_SESSION['sumOfNumbersSecond'])) {
+                echo $_SESSION['sumOfNumbersSecond'];
+                unset($_SESSION['sumOfNumbersSecond']);
+            }
+            ?>
         </div>
     </form>
 </section>
@@ -35,11 +45,16 @@ session_start();
         <div>
             <input class="file" type="file" name="uploadFile"><br>
         </div>
-
         <input type="submit" name="sendFile" value="Загрузить">
+        <input type="submit" name="showFiles" value="Показать файлы">
         <div class="result">
             <div class="show-links">
-                <?= isset($_SESSION['uploadFile']) ? $_SESSION['uploadFile'] : '' ?>
+                <?php
+                if (isset($_SESSION['uploadFile'])) {
+                    echo $_SESSION['uploadFile'];
+                    unset($_SESSION['uploadFile']);
+                }
+                ?>
             </div>
         </div>
     </form>
@@ -53,7 +68,8 @@ session_start();
             <?php
             if (isset($_SESSION['сhessBoard'])) {
                 echo $_SESSION['сhessBoard'];
-            } else '';
+                unset($_SESSION['сhessBoard']);
+            }
             ?>
         </div>
     </form>
@@ -64,7 +80,12 @@ session_start();
         <input type="text" name="enteredNumber"><br>
         <input type="submit" name="sumOfDigits" value="Показать">
         <div class="result">Сумма цифр равна:
-            <?= isset($_SESSION['sumOfDigits']) ? $_SESSION['sumOfDigits'] : '' ?>
+            <?php
+            if (isset($_SESSION['sumOfDigits'])) {
+                echo $_SESSION['sumOfDigits'];
+                unset($_SESSION['sumOfDigits']);
+            }
+            ?>
         </div>
     </form>
 </section>
@@ -76,7 +97,8 @@ session_start();
             <?php
             if (isset($_SESSION['arrayOfNumbers'])) {
                 print_r($_SESSION['arrayOfNumbers']);
-            } else '';
+                unset($_SESSION['arrayOfNumbers']);
+            }
             ?>
         </div>
     </form>
@@ -84,8 +106,14 @@ session_start();
 <section>
     <form action="script_file.php" method="post">
         <h3>Счетчик посещений </h3>
+        <input type="submit" name="numberOfVisits" value="Сбросить">
         <div class="result">Количество посещений :
-            <?= isset($_SESSION['сounter']) ? $_SESSION['сounter']++ : $_SESSION['сounter'] = 1; ?>
+            <?php
+            if (isset($_SESSION['сounter'])) {
+                $_SESSION['сounter']++;
+            } else $_SESSION['сounter'] = 1;
+            echo $_SESSION['сounter'];
+            ?>
 
         </div>
     </form>
@@ -98,10 +126,14 @@ session_start();
         </div>
         <input type="submit" name="sumOfCharacters" value="Показать">
         <div class="result">Количество символов:
-            <?= isset($_SESSION['numberOfcharacters']) ? $_SESSION['numberOfcharacters'] : '' ?>
+            <?php
+            if (isset($_SESSION['numberOfcharacters'])) {
+                echo $_SESSION['numberOfcharacters'];
+                unset($_SESSION['numberOfcharacters']);
+            }
+            ?>
         </div>
     </form>
 </section>
-
 </body>
 </html>

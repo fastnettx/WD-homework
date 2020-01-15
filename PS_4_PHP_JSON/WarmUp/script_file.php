@@ -2,7 +2,6 @@
 session_start();
 $uploaddir = 'Uploaded_files/';
 
-
 if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['sumOfNumbersFirst'])) {
     calculateTheAmount();
 }
@@ -12,6 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['sumOfNumbersSecond']))
 if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['sendFile'])) {
     uploadFileToServer();
 }
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['showFiles'])) {
+    showFiles();
+}
 if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['drawChessboard'])) {
     drawAchessboardсhessBoard();
 }
@@ -20,6 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['sumOfDigits'])) {
 }
 if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['generateArray'])) {
     generateArrayOfNumbers();
+}
+if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['numberOfVisits'])) {
+    $_SESSION['сounter'] = 0;
 }
 if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['sumOfCharacters'])) {
     countTheNumberOfCharacters();
@@ -53,11 +58,17 @@ function uploadFileToServer()
 {
     global $uploaddir;
     $filename = $_FILES['uploadFile']['name'];
-    $uploadfile = $uploaddir . $_FILES['uploadFile']['name'];
+    $uploadfile = $uploaddir . $filename;
 
     if (!copy($_FILES['uploadFile']['tmp_name'], $uploadfile)) {
         $_SESSION['uploadFile'] = "не удалось скопировать $filename ";
     }
+    $_SESSION['uploadFile'] = createFileList($uploaddir);
+}
+
+function showFiles()
+{
+    global $uploaddir;
     $_SESSION['uploadFile'] = createFileList($uploaddir);
 }
 
@@ -103,7 +114,9 @@ function drawAchessboardсhessBoard()
         }
         $str = $str . '</div>';
         $_SESSION['сhessBoard'] = $str;
-    } else $_SESSION['сhessBoard'] = "Не верно указан диапазон";
+    } else {
+        $_SESSION['сhessBoard'] = "Не верно указан диапазон";
+    }
 
 }
 
@@ -121,7 +134,9 @@ function calculateTheSumOfTheDigits()
     $number = $_POST['enteredNumber'];
     if (preg_match(" /^\d+$/", $number)) {
         $_SESSION['sumOfDigits'] = array_sum(str_split($number));
-    } else $_SESSION['sumOfDigits'] = "Не верно указано значение";
+    } else {
+        $_SESSION['sumOfDigits'] = "Не верно указано значение";
+    }
 }
 
 function generateArrayOfNumbers()
@@ -141,14 +156,13 @@ function generateArrayOfNumbers()
 
 function countTheNumberOfCharacters()
 {
-    $characters = $_POST['characters'];
-    $line = substr_count($characters, "\n");
-    $space = substr_count($characters, " ");
-    $letter = iconv_strlen($characters) - $line - $space;
-
+    $characters = strval($_POST['characters']);
+    $line = substr_count($characters, "\n") + 1;
+    $space = preg_match_all('/ /', $characters);
+    $letter = iconv_strlen($characters) - ($line - 1) - $space;
 
     $_SESSION['numberOfcharacters'] = "Строк : " . $line . ", Пробелов : "
-        . $space . ", Букв : ".$letter;
+        . $space . ", Букв : " . $letter;
 }
 
 header("Location: index.php");

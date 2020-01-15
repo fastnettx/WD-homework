@@ -10,11 +10,8 @@ function startVoting()
     if (!isset($_POST['radio'])) {
         $_SESSION['theThoice'] = "Зробіть Ваш вибір!";
         header("Location: index.php");
-
     } else unset($_SESSION['theThoice']);
-
     writeToTheDatabase($_POST['radio']);
-
 }
 
 function writeToTheDatabase($value)
@@ -26,7 +23,7 @@ function writeToTheDatabase($value)
         $arr = array('Так' => 0, 'Більше Так, чим Ні' => 0, 'Більше Ні, чим Так' => 0,
             'Ні' => 0, 'Ще не визначився' => 0);
     }
-    if (!empty($value)) {
+    if (!empty($value) && array_key_exists($value, $arr)) {
         $arr[$value]++;
     }
     file_put_contents($file, json_encode($arr));
