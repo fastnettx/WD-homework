@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Perfect</title>
+    <link rel="stylesheet" href="reset.css">
     <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css'
-          integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat&display=swap" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet">
 </head>
 <body>
-<div class="header">
-    <div id="header-menu" class="header-menu visibility">
+<header>
+    <section id="header-menu" class="header-menu visibility">
         <div class="close">
             <i id="close" class="fas fa-times"></i>
         </div>
         <div class="nav-group">
             <div class="icons">
-                <div class="a_circle nav-icons"><i class="fas fa-home"></i> <span>home</span></div>
-                <div class="a_circle nav-icons"><i class="far fa-heart"></i><span>about me</span></div>
-                <div class="a_circle nav-icons"><i class="fas fa-tv"></i><span>portfolio</span></div>
-                <div class="a_circle nav-icons"><i class="far fa-envelope"></i><span>drop me a line</span></div>
+                <div class="nav-icons"><i class="fas fa-home"></i> <span>home</span></div>
+                <div class="nav-icons"><i class="far fa-heart"></i><span>about me</span></div>
+                <div class="nav-icons"><i class="fas fa-tv"></i><span>portfolio</span></div>
+                <div class="nav-icons"><i class="far fa-envelope"></i><span>drop me a line</span></div>
             </div>
         </div>
-    </div>
-    <div class="header-container">
+    </section>
+    <section class="header-container">
         <div class="header-nav">
             <div class="logo">
                 p
@@ -44,16 +44,16 @@
                 too!
             </div>
             <div class="header-content-button">
-                <div class="header-button">
+                <div class="header-button header-indentation">
                     <input type="button" value="download">
                     <i class="fas fa-cloud-download-alt"></i>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="content">
-    <div class="content-about">
+    </section>
+</header>
+<main>
+    <section class="content-about">
         <div class="about-me">
             <div class="text_title">
                 A Longwinded Header
@@ -76,10 +76,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="portfolio">
+    </section>
+    <section class="portfolio">
         <div class="portfolio-content">
-            <div class="text_title">
+            <div class="text_title portfolio-text">
                 Get a Dog Up Ya’
             </div>
             <div class="main-text">
@@ -97,10 +97,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="donate">
+    </section>
+    <section class="donate">
         <div class="donate-content">
-            <div class="text_title">
+            <div class="text_title donate-content-text">
                 Like What You See?
             </div>
             <div class="donate-content-button">
@@ -110,38 +110,38 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="contact">
+    </section>
+    <section class="contact">
         <div class="contact-content">
             <div class="socials-icons">
-                <div class="a_circle"><i class="fas fa-basketball-ball"></i></div>
-                <div class="a_circle"><i class="fab fa-facebook-f"></i></div>
-                <div class="a_circle"><i class="fas fa-dove"></i></div>
-                <div class="a_circle"><i class="fab fa-telegram-plane"></i></div>
+                <i class="fas fa-basketball-ball"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fas fa-dove"></i>
+                <i class="fab fa-telegram-plane"></i>
             </div>
             <div class="subscription">
                 <div class="subscription-text">
                     Newsletter Subscription
                 </div>
                 <div class="contact-email ">
-                    <input type="email" placeholder="Enter Email">
-                    <i class="fas fa-envelope blue-button"></i>
+                    <input type="email" placeholder="Enter Email                |">
+                    <i class="fas fa-envelope blue-button-content"></i>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="footer">
+    </section>
+</main>
+<footer>
     <div class="to-top">
         <span>© 2013</span> <span class="colour-to-top">Perth.</span> Breeding pixels since the naughties.
     </div>
-</div>
+</footer>
 <script>
-    document.getElementById('nav').onclick = function () {
-        document.getElementById('header-menu').classList.remove('visibility');
+    document.getElementById("nav").onclick = function () {
+        document.getElementById("header-menu").classList.remove("visibility");
     }
-    document.getElementById('close').onclick = function () {
-        document.getElementById('header-menu').classList.add('visibility');
+    document.getElementById("close").onclick = function () {
+        document.getElementById("header-menu").classList.add("visibility");
     }
 </script>
 </body>
