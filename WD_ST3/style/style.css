@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2C2D32;
+
+}
+
+main {
+    position: relative;
+    background-image: url("../images/images.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center center;
+
+}
