@@ -24,7 +24,6 @@ require 'form.php';
         <div class="column-9"></div>
         <div class="column-10"></div>
     </div>
-
 </header>
 <?php
 if (isset($_SESSION['user'])) {

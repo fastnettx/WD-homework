@@ -1,6 +1,11 @@
 $(document).ready(function () {
     setTimeout(receiveMessages);
-    setInterval(updateContent, 60000);
+
+    setTimeout(function run() {
+        updateContent();
+        setTimeout(run, 100000);
+    }, 100000);
+    //setInterval(updateContent, 10000);
 
     $("#Send").click(function () {
         let message = replaceWithSmile($("#text").val());
@@ -42,7 +47,6 @@ $(document).ready(function () {
             {
                 messagesSent: 'messages'
             },
-
             function (msg) {
                 $('.chat').append(msg);
                 lowerDown();
@@ -52,7 +56,6 @@ $(document).ready(function () {
 
     function replaceWithSmile(message) {
         return replacedMessage = message.replace(/:\)/g, "<img src=\"images/smile.jpg\">").replace(/:\(/g, "<img src=\"images/sadness.jpg\">");
-
     }
 
     function updateContent() {
@@ -63,5 +66,4 @@ $(document).ready(function () {
     function lowerDown() {
         $(".chat").scrollTop($(".chat").prop('scrollHeight') - $(".chat").height());
     }
-
 });

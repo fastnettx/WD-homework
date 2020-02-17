@@ -163,27 +163,32 @@ input[type=submit] {
     width: 20%;
     height: 46px;
     color: #fffecd;
-    background-color: #635960;;
+    background-color: #635960;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 0.5px;
     cursor: pointer;
 }
-.log-out{
+
+.log-out {
     position: absolute;
     margin: -150px -20%;
 }
-.error{
+
+.error {
     color: red;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 13px;
     margin: 3px;
 }
-.message{
+
+.message {
     color: black;
     margin-left: 15px;
 }
-.fatty{
+
+.fatty {
     font-weight: bold;
 }
+
