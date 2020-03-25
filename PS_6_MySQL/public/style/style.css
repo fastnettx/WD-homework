@@ -1,0 +1,194 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #b9c783;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    font-family: Pacifico, sans-serif;
+}
+
+section[class= form-one] {
+    display: flex;
+    flex-direction: column;
+    width: 266px;
+    margin: auto;
+}
+
+section[class= form-two] {
+    display: flex;
+    flex-direction: column;
+    width: 44vw;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+input {
+    height: 35px;
+    border: none;
+    background-color: #fffecd;
+    color: #635960;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+
+button {
+    margin-top: 30px;
+    height: 40px;
+    border: none;
+    color: #fffecd;
+    background-color: #635960;;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+label {
+    color: #635960;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 9px 0;
+
+}
+
+label[for=password] {
+    padding-top: 6px;
+}
+
+
+input[type=text], input[type=password]::-webkit-input-placeholder {
+    letter-spacing: 1.5px;
+    color: #9c8f99;
+}
+
+.band {
+    width: 100%;
+    height: 10px;
+    display: flex;
+}
+
+.band > div {
+    flex-grow: 1;
+}
+
+.column-1, .column-6 {
+
+    background-color: #635960;
+}
+
+.column-2, .column-7 {
+
+    background-color: #8b8e59;
+}
+
+.column-3, .column-8 {
+
+    background-color: #eada7d;
+}
+
+.column-4, .column-9 {
+
+    background-color: #fffecd;
+}
+
+.column-5, .column-10 {
+
+    background-color: #7bc3ab;
+}
+
+h1 {
+    text-align: center;
+    font-family: Pacifico, sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    color: #fffecd;
+}
+
+form {
+    font-family: Montserrat, sans-serif;
+}
+
+.shadow {
+    position: relative;
+    width: 277px;
+    height: 180px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+    z-index: -100;
+    transform: skew(21deg, -2deg) translate(46px, -20px) rotate(-6deg);
+}
+
+.section-form-two {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+}
+
+.chat {
+    color: #242cdb;
+    background-color: #fffecd;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    font-family: sans-serif;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.chat-send {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+input[class=send-text] {
+    height: 44px;
+    width: 73%;
+}
+
+input[type=submit] {
+    width: 20%;
+    height: 46px;
+    color: #fffecd;
+    background-color: #635960;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.log-out {
+    position: absolute;
+    margin: -150px -20%;
+}
+
+.error {
+    color: red;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 3px;
+}
+
+.message {
+    color: black;
+    margin-left: 15px;
+}
+
+.fatty {
+    font-weight: bold;
+}
+
