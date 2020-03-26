@@ -48,14 +48,12 @@ function receiveMessages($date)
     $sql = "SELECT * FROM message WHERE `date` > '$date_msec'";
     $result = mysqli_query($link, $sql);
     $object = [];
-    $number = 0;
     while (($row = mysqli_fetch_array($result)) != false) {
         $array = [];
         $array['date'] = $row[1];
         $array['name'] = $row[2];
         $array['text'] = $row[3];
-        $object[$number] = $array;
-        $number++;
+        $object[] = $array;
     }
     echo json_encode($object);
 }
