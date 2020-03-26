@@ -1,6 +1,6 @@
 <section class="form-one">
     <h1>Easy Chat</h1>
-    <form class="section-form-one" action="../private/php/login.php" method="post">
+    <form class="section-form-one" action="../private/login.php" method="post">
         <label for="name">Enter your name</label>
         <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="off"
                value="<?= isset($_SESSION['name']) ? $_SESSION['name'] : "" ?>">

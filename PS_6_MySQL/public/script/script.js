@@ -3,9 +3,9 @@ $(document).ready(function () {
 
     setTimeout(function run() {
         updateContent();
-        setTimeout(run, 100000);
+        setTimeout(run, 60000);
     }, 60000);
-    //setInterval(updateContent, 10000);
+    //setInterval(updateContent, 60000);
 
     $("#Send").click(function () {
         let message = replaceWithSmile($("#text").val());
@@ -26,8 +26,8 @@ $(document).ready(function () {
 
     function sendForm(message) {
         let dateMs = Date.now();
-        let post = $.post(
-            '../private/php/chat.php',
+        $.post(
+            '../private/chat.php',
             {
                 ajaxSent: 'sent',
                 text: message,
@@ -41,11 +41,9 @@ $(document).ready(function () {
     }
 
     function transform_an_array(message) {
-        console.log(message);
         let date = new Date(Number(message['date']));
         let name = message['name'];
         let text = message['text'];
-        console.log(date.getSeconds());
         $('.chat').append("<div class='message'>" + "[" + convert_time(date) + "] <span class=\'fatty\'>" +
             name + "</span> " + text + "</div>");
     }
@@ -62,16 +60,15 @@ $(document).ready(function () {
 
 
     function receiveMessages() {
-        let dateMs = Date.now();
         $.post(
-            '../private/php/chat.php',
+            '../private/chat.php',
             {
                 messagesSent: 'messages'
             },
             function (msg) {
-                let message = JSON.parse(msg);
-                for (let i = 0; i < message.length; i++) {
-                    transform_an_array(message[i]);
+                let object = JSON.parse(msg);
+                for (let i = 0; i < object.length; i++) {
+                    transform_an_array(object[i]);
                 }
                 lowerDown();
             }

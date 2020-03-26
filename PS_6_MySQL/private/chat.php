@@ -9,7 +9,7 @@ define('DATABASE', 'chat');
 if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['log-out'])) {
     unset($_SESSION['name']);
     unset($_SESSION['user']);
-    header('location: ../../public/index.php');
+    header('location: ../public/index.php');
 }
 
 

@@ -11,7 +11,7 @@ unset($_SESSION['passwordErr']);
 
 if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
     checkForm();
-    header('location: ../../public/index.php');
+    header('location: ../public/index.php');
 }
 
 function checkForm()
